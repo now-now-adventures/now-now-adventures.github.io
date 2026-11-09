@@ -1,959 +1,302 @@
 <!DOCTYPE html>
-
-<html lang="en-GB">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Now-Now Adventures — cheeky, experience-led adventures in South Africa and beyond. Safari, Cape Town excursions, private guides in English, Spanish and Russian." name="description"/>
-<meta content="dark light" name="color-scheme"/>
-<title>Now-Now Adventures — Cape Town adventures, sooner than you think</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Now-Now Adventures | Tailor-made adventures, private guides &amp; trip planning</title>
+<meta name="description" content="Full-package adventures, professional guides in English, Spanish and Russian, itinerary design and bookings. Plus AI agents for DMCs, travel agents, tour operators and lodges. Get your quote.">
+<link rel="canonical" href="https://now-now-adventures.github.io/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#e8553d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Now-Now Adventures">
+<meta property="og:title" content="Now-Now Adventures | Adventure? Now-now.">
+<meta property="og:description" content="We plan it, book it and guide it, so you just go. Full-package adventures, private guides, itinerary design and bookings.">
+<meta property="og:url" content="https://now-now-adventures.github.io/">
+<meta property="og:image" content="https://now-now-adventures.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Now-Now Adventures | Adventure? Now-now.">
+<meta name="twitter:description" content="Full-package adventures, private guides, itinerary design and bookings.">
+<meta name="twitter:image" content="https://now-now-adventures.github.io/img/og.jpg">
+<link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-m.webp" media="(max-width:800px)">
+<link rel="preload" as="image" href="img/hero.webp" media="(min-width:801px)">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Now-Now Adventures","url":"https://now-now-adventures.github.io/","logo":"https://now-now-adventures.github.io/favicon.svg","image":"https://now-now-adventures.github.io/img/og.jpg","description":"Tailor-made adventure travel: full-package trips, professional tour guides in English, Spanish and Russian, itinerary design and bookings of activities, restaurants and flights. AI agents for DMCs, travel agents, tour operators and lodges.","knowsLanguage":["en","es","ru"],"areaServed":"Worldwide","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Full package adventure"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Professional tour guides in English, Spanish and Russian"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Itinerary design"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Booking of activities, restaurants, flights and other services"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI agents for travel businesses"}}]}
+</script>
 <style>
-@font-face{font-family:"Fraunces";src:url("fonts/fraunces-600.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Fraunces";src:url("fonts/fraunces-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Inter";src:url("fonts/inter-cyr-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:"Inter";src:url("fonts/inter-cyr-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:"Inter";src:url("fonts/inter-cyr-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:"Inter";src:url("fonts/inter-cyr-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:"Fraunces";src:url("fonts/lora-cyr-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:"Fraunces";src:url("fonts/lora-cyr-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:"Inter";src:url("fonts/inter-400.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Inter";src:url("fonts/inter-500.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"Inter";src:url("fonts/inter-600.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Inter";src:url("fonts/inter-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:700;font-style:normal;font-display:swap}
-
-
-:root{
-  --bg:#0b0a0f;
-  --bg-2:#14121c;
-  --surface:rgba(255,255,255,.06);
-  --surface-2:rgba(255,255,255,.1);
-  --stroke:rgba(255,255,255,.12);
-  --text:#f7f2ea;
-  --muted:#b7aea3;
-  --coral:#ff4f2e;
-  --coral-2:#ff7a45;
-  --neon:#39ffb6;
-  --violet:#8b5cf6;
-  --sunset:#ffb347;
-  --card-r:24px;
-  --max:1180px;
-  --display:"Fraunces",Georgia,serif;
-  --body:"Inter",system-ui,sans-serif;
-  --shadow:0 20px 60px rgba(0,0,0,.45);
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:var(--body);
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.55;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
-}
-body::before{
-  content:"";
-  pointer-events:none;
-  position:fixed;inset:0;z-index:9999;opacity:.055;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-img{max-width:100%;display:block;height:auto}
-a{color:inherit;text-decoration:none}
-button,input,select,textarea{font:inherit;color:inherit}
-.wrap{width:min(100% - 1.5rem,var(--max));margin-inline:auto}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-
-/* mesh accents */
-.mesh{
-  position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;pointer-events:none;z-index:0;
-}
-.mesh-a{width:420px;height:420px;background:radial-gradient(circle,rgba(255,79,46,.55),transparent 70%);top:-80px;right:-60px}
-.mesh-b{width:360px;height:360px;background:radial-gradient(circle,rgba(57,255,182,.28),transparent 70%);bottom:10%;left:-80px}
-.mesh-c{width:280px;height:280px;background:radial-gradient(circle,rgba(139,92,246,.35),transparent 70%);top:40%;right:10%}
-
-/* NAV glass */
-.nav{
-  position:sticky;top:0;z-index:80;
-  background:rgba(11,10,15,.55);
-  backdrop-filter:blur(18px) saturate(1.4);
-  -webkit-backdrop-filter:blur(18px) saturate(1.4);
-  border-bottom:1px solid var(--stroke);
-}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
-.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:800;letter-spacing:-.02em;font-size:1rem}
-.logo-mark{
-  width:2.15rem;height:2.15rem;border-radius:999px;
-  background:conic-gradient(from 180deg,var(--coral),var(--sunset),var(--neon),var(--violet),var(--coral));
-  display:grid;place-items:center;position:relative;
-}
-.logo-mark::after{content:"NN";position:relative;z-index:1;font-family:var(--display);font-weight:700;font-size:.62rem;letter-spacing:-.02em;color:#fff}
-.logo-mark::before{content:"";position:absolute;inset:2px;border-radius:999px;background:#0b0a0f}
-.nav-links{display:none;gap:1.1rem;align-items:center}
-.nav-links a{font-size:.9rem;font-weight:500;color:var(--muted)}
-.nav-links a:hover,.nav-links a:focus-visible{color:var(--text)}
-.nav-cta{
-  display:inline-flex;align-items:center;gap:.35rem;
-  padding:.55rem 1rem;border-radius:999px;font-weight:700;font-size:.85rem;
-  background:linear-gradient(135deg,var(--coral),var(--coral-2));color:#fff;
-  box-shadow:0 8px 24px rgba(255,79,46,.35);
-}
-.nav-cta:hover{filter:brightness(1.08)}
-.menu-btn{border:0;background:transparent;padding:.45rem;cursor:pointer;display:grid;gap:5px}
-.menu-btn span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px}
-.nav.open .nav-links{
-  display:flex;flex-direction:column;align-items:stretch;
-  position:absolute;left:0;right:0;top:100%;
-  background:rgba(11,10,15,.92);backdrop-filter:blur(20px);
-  padding:1rem 1.25rem 1.35rem;border-bottom:1px solid var(--stroke);
-}
-
-/* HERO */
-.hero{
-  position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden;
-}
-.hero-media{
-  position:absolute;inset:-8%;
-  background:#000 center/cover no-repeat;
-  animation:ken 28s ease-in-out infinite alternate;
-  will-change:transform;
-}
-@keyframes ken{
-  from{transform:scale(1) translate(0,0)}
-  to{transform:scale(1.12) translate(-2%,-1.5%)}
-}
-.hero-media::after{
-  content:"";position:absolute;inset:0;
-  background:
-    linear-gradient(180deg,rgba(11,10,15,.35) 0%,rgba(11,10,15,.55) 40%,rgba(11,10,15,.92) 100%),
-    radial-gradient(ellipse at 20% 20%,rgba(255,79,46,.25),transparent 50%);
-}
-.hero-content{position:relative;z-index:2;padding:5.5rem 0 2.5rem}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:.45rem;
-  padding:.4rem .85rem;border-radius:999px;font-size:.75rem;font-weight:700;
-  letter-spacing:.06em;text-transform:uppercase;
-  background:rgba(255,255,255,.08);border:1px solid var(--stroke);
-  backdrop-filter:blur(10px);margin-bottom:1.1rem;
-}
-.eyebrow .dot{width:.5rem;height:.5rem;border-radius:999px;background:var(--neon);box-shadow:0 0 12px var(--neon)}
-.hero h1{
-  font-family:var(--display);font-weight:800;
-  font-size:clamp(3rem,12vw,6.2rem);line-height:.92;letter-spacing:-.04em;
-  max-width:11ch;margin-bottom:1.1rem;
-}
-.hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--coral),var(--sunset),var(--neon));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-lead{font-size:clamp(1.05rem,2.5vw,1.25rem);max-width:38ch;color:rgba(247,242,234,.88);margin-bottom:1.6rem}
-.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2rem}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:.45rem;
-  border:0;border-radius:999px;padding:.95rem 1.4rem;font-weight:700;cursor:pointer;
-  transition:transform .2s ease,filter .2s ease,background .2s ease;
-}
-.btn:hover{transform:translateY(-2px)}
-.btn:focus-visible{outline:3px solid var(--neon);outline-offset:3px}
-.btn-primary{background:linear-gradient(135deg,var(--coral),#ff6b3d);color:#fff;box-shadow:0 14px 40px rgba(255,79,46,.4)}
-.btn-ghost{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;backdrop-filter:blur(8px)}
-.btn-neon{background:var(--neon);color:#06261b}
-.btn-neon:hover{filter:brightness(1.05)}
-
-.ticker-wrap{
-  position:relative;z-index:2;
-  border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke);
-  background:rgba(0,0,0,.35);backdrop-filter:blur(8px);overflow:hidden;
-}
-.ticker{
-  display:flex;gap:2rem;width:max-content;padding:.85rem 0;
-  animation:marquee 32s linear infinite;font-weight:700;font-size:.92rem;letter-spacing:.02em;
-}
-.ticker span{white-space:nowrap;color:var(--muted)}
-.ticker span i{font-style:normal;color:var(--coral-2);margin:0 .55rem}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
+@font-face{font-family:"Fraunces";src:url(fonts/fraunces-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:"Fraunces";src:url(fonts/lora-cyr-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0400-045F}
+@font-face{font-family:"Inter";src:url(fonts/inter-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
+@font-face{font-family:"Inter";src:url(fonts/inter-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
+@font-face{font-family:"Inter";src:url(fonts/inter-cyr-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0400-045F}
+@font-face{font-family:"Inter";src:url(fonts/inter-cyr-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0400-045F}
+:root{--bg:#fbf8f4;--card:#fff;--ink:#1d1a17;--muted:#5f5850;--line:#ebe4da;--coral:#e8553d;--coral-d:#c63f29;--dark:#15202b;--r:18px;--head:"Fraunces",Georgia,serif;--body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.55 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.1;margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;z-index:99;background:#fff;padding:8px 12px;border-radius:8px}
+:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(251,248,244,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:16px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;letter-spacing:-.01em;margin-right:auto}
+.logo svg{width:32px;height:32px}
+.links{display:flex;gap:22px}
+.links a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+.links a:hover{color:var(--ink)}
+.langs{display:flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:#fff}
+.langs button{all:unset;cursor:pointer;font:600 .72rem var(--body);padding:5px 8px;border-radius:999px;color:var(--muted)}
+.langs button[aria-pressed=true]{background:var(--ink);color:#fff}
+.langs button:focus-visible{outline:2px solid var(--coral)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;border:0;font:600 .98rem var(--body);text-decoration:none;cursor:pointer;transition:background .15s,transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-p{background:var(--coral);color:#fff}.btn-p:hover{background:var(--coral-d)}
+.btn-g{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.55)}.btn-g:hover{background:rgba(255,255,255,.26)}
+.btn-o{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}.btn-o:hover{background:var(--ink);color:#fff}
+.btn-sm{min-height:40px;padding:0 16px;font-size:.9rem}
+/* hero */
+.hero{position:relative;min-height:min(78vh,680px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,25,.15) 0%,rgba(10,15,25,.35) 45%,rgba(10,15,25,.78) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:56px;padding-top:80px}
+.eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.92;margin:0 0 14px}
+.hero h1{font-size:clamp(2.6rem,7.5vw,5.2rem);letter-spacing:-.02em;max-width:12ch}
+.hero h1 em{font-style:normal;color:#ffb8a8}
+.hero p.lead{font-size:clamp(1.05rem,2.2vw,1.3rem);max-width:34ch;margin:16px 0 26px;opacity:.95}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px 18px;margin:26px 0 0;padding:0;list-style:none;font-size:.9rem;opacity:.92}
+.chips li::before{content:"✓ ";color:#ffb8a8;font-weight:600}
 /* sections */
-section{padding:4.5rem 0;position:relative}
-.section-head{max-width:42rem;margin-bottom:2rem;position:relative;z-index:1}
-.kicker{color:var(--neon);font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.55rem}
-.section-head h2{
-  font-family:var(--display);font-weight:800;
-  font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.03em;line-height:1.05;margin-bottom:.65rem;
-}
-.section-head p{color:var(--muted);font-size:1.05rem}
-
-/* destinations */
-#destinations{background:linear-gradient(180deg,var(--bg),var(--bg-2) 40%,var(--bg))}
-.region-tabs{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-bottom:1.4rem}
-.region-tab{
-  appearance:none;border:1px solid var(--stroke);cursor:pointer;text-align:left;
-  border-radius:var(--card-r);overflow:hidden;position:relative;min-height:120px;color:#fff;
-  background:#1a1822;transition:transform .25s ease,outline .2s;
-}
-.region-tab:hover{transform:translateY(-3px)}
-.region-tab img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease;filter:saturate(.9)}
-.region-tab:hover img,.region-tab[aria-selected="true"] img{transform:scale(1.08)}
-.region-tab::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 15%,rgba(0,0,0,.78))}
-.region-tab span{position:relative;z-index:1;display:block;padding:1rem;font-family:var(--display);font-weight:700;font-size:1.05rem}
-.region-tab small{display:block;font-family:var(--body);font-weight:500;opacity:.85;font-size:.72rem;margin-top:.2rem;letter-spacing:.04em;text-transform:uppercase}
-.region-tab[aria-selected="true"]{outline:2px solid var(--coral);outline-offset:2px;border-color:transparent}
-.region-panel[hidden]{display:none}
-.coming-soon{
-  background:var(--surface);border:1px solid var(--stroke);border-radius:var(--card-r);
-  padding:2rem;text-align:center;backdrop-filter:blur(10px);
-}
-.coming-soon strong{display:block;font-family:var(--display);font-size:1.3rem;margin-bottom:.4rem}
-.coming-soon p{color:var(--muted)}
-.country-grid{display:grid;gap:.7rem;grid-template-columns:repeat(2,1fr)}
-.country-chip{
-  background:var(--surface);border:1px solid var(--stroke);border-radius:18px;padding:.9rem 1rem;
-  font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:.5rem;
-  transition:transform .2s,background .2s;
-}
-.country-chip:hover{transform:translateY(-2px)}
-.country-chip.active{background:linear-gradient(135deg,rgba(255,79,46,.25),rgba(255,179,71,.15));border-color:rgba(255,79,46,.45)}
-.badge-soon{font-size:.65rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;background:rgba(255,255,255,.08);color:var(--muted);padding:.25rem .55rem;border-radius:999px}
-.badge-live{background:var(--neon);color:#06261b;font-size:.65rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:.25rem .55rem;border-radius:999px}
-
-/* SA */
-.sa-intro{display:grid;gap:1rem;margin-bottom:2.25rem}
-.glass-card{
-  background:rgba(255,255,255,.05);border:1px solid var(--stroke);border-radius:var(--card-r);
-  overflow:hidden;backdrop-filter:blur(12px);box-shadow:var(--shadow);
-  transition:transform .3s ease;
-}
-.glass-card:hover{transform:translateY(-4px) rotate(-.2deg)}
-.glass-card img{width:100%;height:210px;object-fit:cover}
-.glass-card .body{padding:1.25rem 1.35rem 1.5rem}
-.glass-card h3{font-family:var(--display);font-size:1.35rem;margin-bottom:.4rem;letter-spacing:-.02em}
-.lang-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
-.lang{
-  display:inline-flex;align-items:center;gap:.35rem;
-  background:rgba(57,255,182,.12);border:1px solid rgba(57,255,182,.3);
-  color:var(--neon);border-radius:999px;padding:.3rem .7rem;font-size:.78rem;font-weight:700;
-}
-.lang i{font-style:normal}
-
-.card-grid{display:grid;gap:1rem}
-.card{
-  background:rgba(255,255,255,.05);border:1px solid var(--stroke);border-radius:var(--card-r);
-  overflow:hidden;display:flex;flex-direction:column;
-  transition:transform .3s ease, box-shadow .3s ease;
-  transform-style:preserve-3d;
-}
-.card:hover{transform:translateY(-6px) rotate3d(1,1,0,2deg);box-shadow:0 24px 50px rgba(0,0,0,.4)}
-.card img{width:100%;height:180px;object-fit:cover;transition:transform .45s ease}
-.card:hover img{transform:scale(1.06)}
-.card .body{padding:1.1rem 1.2rem 1.35rem;flex:1;display:flex;flex-direction:column}
-.card h3{font-family:var(--display);font-size:1.12rem;margin-bottom:.35rem;letter-spacing:-.01em}
-.card p{color:var(--muted);font-size:.94rem;flex:1}
-.tag{
-  display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
-  padding:.28rem .55rem;border-radius:999px;margin-bottom:.55rem;width:fit-content;
-  background:rgba(57,255,182,.12);color:var(--neon);border:1px solid rgba(57,255,182,.25);
-}
-.tag.coral{background:rgba(255,79,46,.15);color:#ff9b86;border-color:rgba(255,79,46,.3)}
-.tag.sand{background:rgba(255,179,71,.12);color:var(--sunset);border-color:rgba(255,179,71,.28)}
-
-
-/* ===== THEMED BANDS ===== */
-.theme-band{
-  position:relative;margin:2.75rem 0 0;padding:1.75rem 1.15rem 1.9rem;
-  border-radius:28px;overflow:hidden;border:1px solid var(--stroke);
-}
-.theme-band > *{position:relative;z-index:1}
-.theme-band .section-head{margin-bottom:1.25rem}
-.theme-band .carousel-head{margin-bottom:1rem}
-.theme-kicker{font-size:.72rem;text-transform:uppercase;margin-bottom:.45rem}
-
-/* Safari — premium leopard */
-.theme-safari{
-  background:
-    linear-gradient(160deg,rgba(28,18,10,.92),rgba(12,10,8,.96)),
-    #1a120c;
-  border-color:rgba(210,160,90,.28);
-}
-.theme-safari::before{
-  content:"";position:absolute;inset:0;opacity:.22;pointer-events:none;z-index:0;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='%23c4924a' fill-opacity='0.9'%3E%3Cellipse cx='28' cy='32' rx='10' ry='7' transform='rotate(-18 28 32)'/%3E%3Cellipse cx='70' cy='24' rx='8' ry='5' transform='rotate(12 70 24)'/%3E%3Cellipse cx='110' cy='40' rx='11' ry='7' transform='rotate(-8 110 40)'/%3E%3Cellipse cx='40' cy='78' rx='9' ry='6' transform='rotate(22 40 78)'/%3E%3Cellipse cx='88' cy='70' rx='12' ry='7' transform='rotate(-25 88 70)'/%3E%3Cellipse cx='130' cy='88' rx='8' ry='5' transform='rotate(15 130 88)'/%3E%3Cellipse cx='22' cy='120' rx='10' ry='6' transform='rotate(-12 22 120)'/%3E%3Cellipse cx='68' cy='118' rx='9' ry='6' transform='rotate(8 68 118)'/%3E%3Cellipse cx='118' cy='130' rx='11' ry='7' transform='rotate(-20 118 130)'/%3E%3C/g%3E%3C/svg%3E");
-  background-size:140px 140px;
-}
-.theme-safari::after{
-  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(ellipse at 15% 0%,rgba(255,179,71,.18),transparent 45%),
-             linear-gradient(180deg,rgba(11,10,15,.15),rgba(11,10,15,.55));
-}
-.theme-safari .theme-kicker{color:#e8c07a}
-.theme-safari h2.theme-title{
-  
-  background:linear-gradient(120deg,#f0d7a4,#c4924a 40%,#8a5a2b 70%,#e8c07a);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  text-shadow:0 0 40px rgba(196,146,74,.15);
-}
-.theme-safari .card{background:rgba(20,14,10,.72);border-color:rgba(210,160,90,.22)}
-.theme-safari .tag{background:rgba(196,146,74,.15);color:#e8c07a;border-color:rgba(196,146,74,.35)}
-
-/* City — neon + Bo-Kaap poster */
-.theme-city{
-  background:
-    linear-gradient(135deg,rgba(18,8,40,.95),rgba(8,12,28,.96)),
-    #12081f;
-  border-color:rgba(255,77,180,.25);
-}
-.theme-city::before{
-  content:"";position:absolute;inset:0;z-index:0;opacity:.35;pointer-events:none;
-  background-image:
-    linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
-  background-size:48px 48px;
-}
-.theme-city::after{
-  content:"";position:absolute;inset:auto -20% -30% auto;width:55%;height:70%;z-index:0;pointer-events:none;
-  background:
-    radial-gradient(circle at 30% 40%,rgba(255,45,149,.35),transparent 55%),
-    radial-gradient(circle at 70% 60%,rgba(57,200,255,.28),transparent 50%),
-    radial-gradient(circle at 50% 20%,rgba(255,214,10,.2),transparent 45%);
-  filter:blur(8px);
-}
-.theme-city .theme-kicker{color:#ff4d9a}
-.theme-city h2.theme-title{
-  
-  color:#fff;
-  
-}
-.theme-city .theme-city .card{background:rgba(255,255,255,.06);border-color:rgba(255,77,180,.25)}
-.theme-city .card:hover{box-shadow:0 0 0 1px rgba(57,200,255,.35),0 20px 40px rgba(0,0,0,.4)}
-.theme-city .tag{background:rgba(255,214,10,.15);color:#ffd60a;border-color:rgba(255,214,10,.35)}
-
-/* Wine — burgundy + gold + serif */
-.theme-wine{
-  background:linear-gradient(165deg,#2a0f18 0%,#1a0a10 55%,#12080c 100%);
-  border-color:rgba(201,162,77,.3);
-}
-.theme-wine::before{
-  content:"";position:absolute;inset:0;z-index:0;opacity:.4;pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220' fill='none'%3E%3Cpath d='M40 180c20-40 20-80 0-120' stroke='%23c9a24d' stroke-opacity='.35' stroke-width='1.2'/%3E%3Cpath d='M70 170c15-35 15-70 0-105' stroke='%23c9a24d' stroke-opacity='.25' stroke-width='1'/%3E%3Ccircle cx='40' cy='55' r='5' fill='%23721f3a' fill-opacity='.55'/%3E%3Ccircle cx='52' cy='70' r='4' fill='%23721f3a' fill-opacity='.45'/%3E%3Ccircle cx='70' cy='60' r='4.5' fill='%23721f3a' fill-opacity='.5'/%3E%3Cpath d='M160 30c-10 25-5 55 15 90' stroke='%23c9a24d' stroke-opacity='.3' stroke-width='1.1'/%3E%3Ccircle cx='175' cy='125' r='5' fill='%23721f3a' fill-opacity='.5'/%3E%3Ccircle cx='188' cy='112' r='3.5' fill='%23721f3a' fill-opacity='.4'/%3E%3C/svg%3E");
-  background-size:220px 220px;
-}
-.theme-wine .theme-kicker{color:#c9a24d;}
-.theme-wine h2.theme-title{
-  
-  color:#f3e6c8;
-}
-.theme-wine .section-head p{color:#cbb8a8;}
-.theme-wine .card{background:rgba(60,18,30,.55);border-color:rgba(201,162,77,.28)}
-.theme-wine .card h3{}
-.theme-wine .tag{background:rgba(114,31,58,.45);color:#f0d9a0;border-color:rgba(201,162,77,.4)}
-
-/* Ocean — blue waves */
-.theme-ocean{
-  background:linear-gradient(180deg,#062a3a 0%,#041820 60%,#031018 100%);
-  border-color:rgba(56,189,248,.28);
-}
-.theme-ocean::before{
-  content:"";position:absolute;left:0;right:0;bottom:-8px;height:90px;z-index:0;pointer-events:none;opacity:.55;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%230ea5e9' fill-opacity='.25' d='M0,64 C240,120 480,0 720,48 C960,96 1200,20 1440,64 L1440,120 L0,120 Z'/%3E%3Cpath fill='%2338bdf8' fill-opacity='.18' d='M0,80 C200,20 400,100 720,70 C1040,40 1240,100 1440,60 L1440,120 L0,120 Z'/%3E%3C/svg%3E") center bottom / 100% 100% no-repeat;
-}
-.theme-ocean::after{
-  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(ellipse at 80% 10%,rgba(14,165,233,.25),transparent 45%);
-}
-.theme-ocean .theme-kicker{color:#7dd3fc}
-.theme-ocean h2.theme-title{
-  
-  background:linear-gradient(100deg,#e0f2fe,#38bdf8 50%,#0ea5e9);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.theme-ocean .card{background:rgba(4,24,36,.7);border-color:rgba(56,189,248,.22)}
-.theme-ocean .tag{background:rgba(14,165,233,.15);color:#7dd3fc;border-color:rgba(56,189,248,.35)}
-
-/* Adventure — rugged trail */
-.theme-adventure{
-  background:linear-gradient(155deg,#1a1712,#0f0e0c 70%);
-  border-color:rgba(168,162,158,.25);
-}
-.theme-adventure::before{
-  content:"";position:absolute;inset:0;z-index:0;opacity:.18;pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='80' height='80' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-  mix-blend-mode:overlay;
-}
-.theme-adventure::after{
-  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:
-    linear-gradient(115deg,transparent 40%,rgba(255,122,69,.08) 50%,transparent 60%),
-    radial-gradient(ellipse at 10% 90%,rgba(255,179,71,.12),transparent 40%);
-}
-.theme-adventure .theme-kicker{color:#fda866}
-.theme-adventure h2.theme-title{
-  color:#f5efe6;
-  
-}
-.theme-adventure .card{background:rgba(28,24,18,.75);border-color:rgba(168,162,158,.22)}
-.theme-adventure .tag{background:rgba(255,122,69,.12);color:#fda866;border-color:rgba(255,122,69,.3)}
-
-.theme-band .carousel-controls button{
-  background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)
-}
-@media (min-width:700px){
-  .theme-band{padding:2rem 1.5rem 2.1rem}
-  .theme-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-  .theme-grid.cols-3{grid-template-columns:repeat(3,1fr)}
-}
-
-/* unified type */
-h1,h2,h3,.theme-title{font-family:var(--display);font-weight:800}
-h2,.theme-title{letter-spacing:-.03em;text-transform:none}
-h3{font-weight:700;letter-spacing:-.01em}
-.kicker,.theme-kicker{font-family:var(--body);font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-style:normal}
-.theme-band .section-head p{font-family:var(--body);font-style:normal}
-/* bento services */
-.bento{
-  display:grid;gap:1rem;
-  grid-template-columns:1fr;
-}
-.bento-item{
-  position:relative;overflow:hidden;border-radius:var(--card-r);
-  border:1px solid var(--stroke);padding:1.5rem;min-height:160px;
-  background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
-}
-.bento-item.wide{background:linear-gradient(135deg,rgba(255,79,46,.22),rgba(139,92,246,.18))}
-.bento-item.tall{background:linear-gradient(160deg,rgba(57,255,182,.14),rgba(11,10,15,.4))}
-.bento-item h3{font-family:var(--display);font-size:1.25rem;margin-bottom:.45rem}
-.bento-item p{color:rgba(247,242,234,.78);font-size:.95rem;max-width:40ch}
-.bento-item .emoji{font-size:1.6rem;margin-bottom:.6rem}
-
-/* carousel */
-.carousel-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1rem;flex-wrap:wrap}
-.carousel-controls{display:flex;gap:.5rem}
-.carousel-controls button{
-  width:2.6rem;height:2.6rem;border-radius:999px;border:1px solid var(--stroke);
-  background:rgba(255,255,255,.06);color:var(--text);cursor:pointer;font-size:1.1rem;
-}
-.carousel-controls button:hover{background:rgba(255,255,255,.12)}
-.carousel{
-  display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
-  padding-bottom:.75rem;-webkit-overflow-scrolling:touch;scrollbar-width:thin;
-}
-.carousel::-webkit-scrollbar{height:6px}
-.carousel::-webkit-scrollbar-thumb{background:rgba(255,255,255,.2);border-radius:999px}
-.carousel .card{min-width:min(82vw,300px);scroll-snap-align:start;flex:0 0 auto}
-
-/* how / why */
-.steps{display:grid;gap:1rem}
-.step{
-  background:rgba(255,255,255,.05);border:1px solid var(--stroke);border-radius:var(--card-r);
-  padding:1.4rem;position:relative;overflow:hidden;
-}
-.step-num{
-  width:2.4rem;height:2.4rem;border-radius:999px;
-  background:linear-gradient(135deg,var(--coral),var(--sunset));color:#fff;
-  display:grid;place-items:center;font-family:var(--display);font-weight:800;margin-bottom:.8rem;
-}
-.step h3{font-family:var(--display);margin-bottom:.35rem}
-.step p{color:var(--muted)}
-.why-grid{display:grid;gap:1rem}
-.why{
-  border:1px solid var(--stroke);border-radius:var(--card-r);padding:1.3rem;
-  background:rgba(255,255,255,.04);
-}
-.why h3{font-family:var(--display);font-size:1.05rem;margin-bottom:.35rem}
-.why p{color:var(--muted);font-size:.94rem}
-
+section{padding:64px 0}
+.sec-h{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px;margin-bottom:28px}
+.sec-h h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.015em}
+.sec-h p{margin:6px 0 0;color:var(--muted)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 14px 34px -18px rgba(40,25,10,.35);transform:translateY(-2px)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto;flex:none}
+.card-b{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.28rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
+.card .btn{margin-top:10px;align-self:flex-start}
+.steps{display:flex;flex-wrap:wrap;gap:10px 28px;margin:30px 0 0;padding:18px 22px;list-style:none;border-radius:var(--r);background:#f3ede5;counter-reset:s;font-weight:600}
+.steps li{counter-increment:s;display:flex;align-items:center;gap:10px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--coral);color:#fff;font-size:.85rem}
+/* AI */
+.ai{background:var(--dark);color:#eef3f7}
+.ai .sec-h p{color:#b8c6d2}
+.tag{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#7fd3c4;margin-bottom:10px}
+.ai .card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)}
+.ai .card:hover{box-shadow:none;border-color:rgba(127,211,196,.5)}
+.ai .card p{color:#b8c6d2}
+.ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(127,211,196,.14);color:#7fd3c4}
+.ico svg{width:22px;height:22px}
+.ai .actions{margin-top:28px}
+.ai .btn-o{color:#fff;border-color:rgba(255,255,255,.6)}.ai .btn-o:hover{background:#fff;color:var(--dark)}
 /* contact */
-#contact{background:radial-gradient(ellipse at top,rgba(255,79,46,.18),transparent 50%),var(--bg-2)}
-#contact .kicker{color:var(--sunset)}
-#contact .section-head p{color:var(--muted)}
-.contact-layout{display:grid;gap:1.4rem}
-.form{
-  background:rgba(255,255,255,.05);border:1px solid var(--stroke);border-radius:var(--card-r);
-  padding:1.4rem;backdrop-filter:blur(14px);
-}
-.form-grid{display:grid;gap:.85rem}
-label{display:grid;gap:.35rem;font-size:.86rem;font-weight:600}
-input,select,textarea{
-  width:100%;border-radius:16px;border:1px solid var(--stroke);
-  background:rgba(0,0,0,.35);padding:.8rem .95rem;color:var(--text);
-}
-input::placeholder,textarea::placeholder{color:rgba(247,242,234,.4)}
-input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--neon);outline-offset:1px}
-select option{color:#111}
-.form-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.4rem}
-.wa{
-  display:inline-flex;align-items:center;gap:.5rem;
-  background:#25D366;color:#052e16;font-weight:800;padding:.95rem 1.2rem;border-radius:999px;
-}
-.thanks{display:none;background:rgba(57,255,182,.12);border:1px solid rgba(57,255,182,.35);border-radius:16px;padding:1rem;margin-top:1rem}
-.thanks.show{display:block}
-.contact-aside{
-  background:linear-gradient(160deg,rgba(255,79,46,.95),rgba(255,122,69,.85) 50%,rgba(139,92,246,.75));
-  border-radius:var(--card-r);padding:1.6rem;color:#fff;position:relative;overflow:hidden;
-}
-.contact-aside h3{font-family:var(--display);font-size:1.5rem;margin-bottom:.5rem}
-.contact-aside p{opacity:.95;margin-bottom:1rem}
-.contact-aside ul{list-style:none;display:grid;gap:.55rem;font-weight:650}
-.contact-aside li::before{content:"→ "}
-
-footer{background:#05040a;color:rgba(247,242,234,.65);padding:2.2rem 0 2.6rem;font-size:.9rem;border-top:1px solid var(--stroke)}
-.footer-inner{display:grid;gap:1rem}
-.footer-brand{color:#fff;font-family:var(--display);font-weight:800;font-size:1.1rem}
-.footer-meta{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem}
-.footer-meta a:hover{color:#fff}
-
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
-
-@media (min-width:640px){
-  .region-tabs{grid-template-columns:repeat(5,1fr)}
-  .region-tab{min-height:150px}
-  .country-grid{grid-template-columns:repeat(3,1fr)}
-  .card-grid{grid-template-columns:repeat(2,1fr)}
-  .bento{grid-template-columns:repeat(2,1fr)}
-  .bento-item.wide{grid-column:span 2}
-  .steps{grid-template-columns:repeat(3,1fr)}
-  .why-grid{grid-template-columns:repeat(2,1fr)}
-  .sa-intro{grid-template-columns:1.15fr .85fr}
-  .glass-card img{height:100%;min-height:280px}
-  .carousel .card{min-width:320px}
-}
-@media (min-width:900px){
-  .menu-btn{display:none}
-  .nav-links{display:flex}
-  .card-grid{grid-template-columns:repeat(3,1fr)}
-  .bento{grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:auto auto}
-  .bento-item.wide{grid-column:1;grid-row:1 / span 2;min-height:100%}
-  .why-grid{grid-template-columns:repeat(4,1fr)}
-  .contact-layout{grid-template-columns:1.35fr .8fr;align-items:start}
-  .footer-inner{grid-template-columns:1fr auto;align-items:end}
-}
-@media (prefers-reduced-motion:reduce){
-  .hero-media{animation:none}
-  .ticker{animation:none}
-  .reveal{opacity:1;transform:none;transition:none}
-  html{scroll-behavior:auto}
-}
-/* pairing override */
-h1,h2,.theme-title,.logo,.footer-brand,.region-tab span,.coming-soon strong{font-weight:600!important;letter-spacing:-.02em!important}
-h3,.glass-card h3,.card h3,.bento-item h3{font-weight:600!important;letter-spacing:-.01em!important}
-.kicker,.theme-kicker,.tag,.chip{font-family:var(--body)!important}
-main>section,footer{overflow-x:clip}
-.hero-note{margin-top:1.1rem;font-size:.85rem;color:var(--muted);max-width:34rem}
-.hero-lead strong{color:#fff;font-weight:600}
-
-/* language switcher */
-.nav-inner{justify-content:flex-start}
-.nav-inner .logo{margin-right:auto}
-.nav-links{order:2}.lang-switch{order:3}.menu-btn{order:4}
-.lang-switch{display:inline-flex;gap:2px;padding:3px;border:1px solid var(--stroke);border-radius:999px;background:rgba(255,255,255,.06);flex:none}
-.lang-switch button{all:unset;cursor:pointer;font-family:var(--body);font-weight:600;font-size:.72rem;letter-spacing:.06em;padding:.32rem .55rem;border-radius:999px;color:var(--muted);line-height:1}
-.lang-switch button:hover{color:var(--text)}
-.lang-switch button:focus-visible{outline:2px solid var(--coral);outline-offset:1px}
-.lang-switch button[aria-pressed="true"]{background:var(--coral);color:#fff}
-.region-tab .rn{font:inherit}
-.btn{text-align:center}
-h1,h2,h3{overflow-wrap:break-word;hyphens:manual}
-.hero h1{max-width:13ch}
-html[lang=ru] .hero h1{font-size:clamp(2.6rem,11vw,6.2rem)}
-.logo{white-space:nowrap}
-@media (max-width:420px){.logo{font-size:.9rem;gap:.4rem}.logo-mark{width:1.9rem;height:1.9rem}.lang-switch button{padding:.3rem .45rem;font-size:.68rem}.nav-inner{gap:.6rem}}
-.country-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-@media (min-width:640px){.country-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.country-chip{flex-wrap:wrap;gap:.35rem .5rem;min-width:0}
+.contact{text-align:center}
+.contact h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.contact p{color:var(--muted);margin:10px 0 24px}
+.contact .actions{justify-content:center}
+footer{border-top:1px solid var(--line);padding:24px 0 90px;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+footer nav{display:flex;gap:18px}footer a{text-decoration:none}footer a:hover{color:var(--ink)}
+/* whatsapp */
+.wa{position:fixed;right:18px;bottom:18px;z-index:30;display:flex;align-items:center;gap:8px;background:#25d366;color:#08311a;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 18px 12px 14px;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
+.wa svg{width:24px;height:24px}
+.wa:hover{background:#1fbe5b}
+/* dialog */
+dialog{border:0;border-radius:22px;padding:0;width:min(560px,calc(100% - 24px));max-height:calc(100% - 24px);color:var(--ink);box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
+dialog::backdrop{background:rgba(15,20,28,.55);backdrop-filter:blur(3px)}
+.dlg{padding:26px 24px 24px}
+.dlg-h{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:16px}
+.dlg-h h2{font-size:1.6rem}
+.x{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:1.4rem;background:#f3ede5;flex:none}
+.x:focus-visible{outline:3px solid var(--coral)}
+form{display:grid;gap:12px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:grid;gap:5px;font-size:.85rem;font-weight:600}
+input,select,textarea{font:inherit;font-weight:400;font-size:1rem;width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--coral);outline:none;box-shadow:0 0 0 3px rgba(232,85,61,.18)}
+textarea{min-height:96px;resize:vertical}
+.hp{display:none}
+.status{min-height:1.4em;margin:0;font-size:.92rem}
+.status.ok{color:#18794e;font-weight:600}.status.err{color:#b42318}
+form .btn{width:100%}
+/* responsive */
+@media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.links{display:none}.nav-cta{display:none}section{padding:48px 0}.hero{min-height:72vh}.hero .wrap{padding-bottom:40px}}
+@media (max-width:560px){.grid.svc{grid-template-columns:1fr 1fr;gap:12px}.svc .card img{aspect-ratio:1/1}.svc .card-b{padding:12px 12px 14px}.svc .card h3{font-size:1.05rem}.svc .card p{font-size:.85rem}.svc .card .btn{width:100%;padding:0 10px;font-size:.85rem}.ai .grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.wa span{display:none}.wa{padding:14px}.actions .btn{flex:1 1 auto}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<a class="sr-only" data-i18n="k0" href="#main">Skip to content</a>
-<header class="nav" id="nav">
-<div class="wrap nav-inner">
-<a aria-label="Now-Now Adventures home" class="logo" data-i18n-al="k162" href="#top">
-<span aria-hidden="true" class="logo-mark"></span>
-      Now-Now Adventures
-    </a>
-<div aria-label="Language" class="lang-switch" data-i18n-al="k193" role="group"><button data-lang="en" lang="en" type="button">EN</button><button data-lang="ru" lang="ru" type="button">RU</button><button data-lang="es" lang="es" type="button">ES</button></div><button aria-controls="navLinks" aria-expanded="false" aria-label="Open menu" class="menu-btn" data-i18n-al="k163" id="menuBtn">
-<span></span><span></span><span></span>
-</button>
-<nav aria-label="Primary" class="nav-links" data-i18n-al="k164" id="navLinks">
-<a data-i18n="k1" href="#destinations">Destinations</a>
-<a data-i18n="k2" href="#south-africa">South Africa</a>
-<a data-i18n="k3" href="#how">How it works</a>
-<a data-i18n="k4" href="#why">Why us</a>
-<a class="nav-cta" data-i18n="k5" href="#contact">Plan a trip</a>
-</nav>
-</div>
+<a class="sr-only skip" href="#main" data-t="skip">Skip to content</a>
+<header class="nav">
+ <div class="wrap nav-in">
+  <a class="logo" href="#top" aria-label="Now-Now Adventures home">
+   <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#e8553d"/><path d="M14 46V18h6l14 18V18h6v28h-6L20 28v18z" fill="#fff"/><circle cx="49" cy="42" r="4" fill="#fff"/></svg>
+   Now-Now Adventures</a>
+  <nav class="links" aria-label="Primary">
+   <a href="#services" data-t="nav_services">Services</a>
+   <a href="#ai" data-t="nav_ai">For travel businesses</a>
+  </nav>
+  <div class="langs" role="group" aria-label="Language">
+   <button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="ru" aria-pressed="false">RU</button><button type="button" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+  <a class="btn btn-p btn-sm nav-cta" href="#contact" data-open="full-package" data-t="nav_cta">Get your quote</a>
+ </div>
 </header>
 <main id="main">
-<section aria-label="Hero" class="hero" data-i18n-al="k165" id="top">
-<div aria-label="Aerial view of Cape Town with Table Mountain, Lion’s Head and Signal Hill" class="hero-media" data-i18n-al="k166" role="img" style="background-image:url('img/hero.jpg')"></div>
-<div class="wrap hero-content">
-<p class="eyebrow" data-i18n="k6"><span aria-hidden="true" class="dot"></span> Cape Town · Experiences · Private guides</p>
-<h1 data-i18n="k7">Adventure? <em>Now-now.</em></h1>
-<p class="hero-lead" data-i18n="k8"><strong>(Actually, right now.)</strong> Adventurous travel for people who want the real stuff — safaris, mountain air, penguins, waves and stories — not another dusty museum shuffle.</p>
-<div class="hero-actions">
-<a class="btn btn-primary" data-i18n="k9" href="#south-africa">Explore South Africa</a>
-<a class="btn btn-ghost" data-i18n="k10" href="#contact">Tell us what you fancy</a>
-</div>
-<p class="hero-note" data-i18n="k11">In South Africa, “now-now” means soon-ish. We reply properly now-now — usually the same day.</p>
-</div>
-<div aria-hidden="true" class="ticker-wrap">
-<div class="ticker">
-<span data-i18n="k12">Safari mornings<i>·</i>Bo-Kaap colour<i>·</i>Table Mountain weather roulette<i>·</i>Cape Point cliffs<i>·</i>Penguin meet-cutes<i>·</i>Winelands walks<i>·</i>Whale season drama<i>·</i>Shark cage heart-rates<i>·</i>Signal Hill launches<i>·</i>Sandboard wipeouts<i>·</i>Luggage babysitting<i>·</i>Adventure now-now<i>·</i></span>
-<span data-i18n="k12">Safari mornings<i>·</i>Bo-Kaap colour<i>·</i>Table Mountain weather roulette<i>·</i>Cape Point cliffs<i>·</i>Penguin meet-cutes<i>·</i>Winelands walks<i>·</i>Whale season drama<i>·</i>Shark cage heart-rates<i>·</i>Signal Hill launches<i>·</i>Sandboard wipeouts<i>·</i>Luggage babysitting<i>·</i>Adventure now-now<i>·</i></span>
-</div>
-</div>
+<section class="hero" id="top" aria-labelledby="h1">
+ <picture>
+  <source media="(max-width:800px)" srcset="img/hero-m.webp">
+  <img src="img/hero.webp" alt="" width="1200" height="900" fetchpriority="high">
+ </picture>
+ <div class="wrap">
+  <p class="eyebrow" data-t="eyebrow">Tailor-made travel · Private guides</p>
+  <h1 id="h1" data-t="h1" data-html>Adventure? <em>Now-now.</em></h1>
+  <p class="lead" data-t="lead">We plan it, book it and guide it. You just go.</p>
+  <div class="actions">
+   <a class="btn btn-p" href="#contact" data-open="full-package" data-t="cta_plan">Plan my trip</a>
+   <a class="btn btn-g" href="#services" data-t="cta_services">See services</a>
+  </div>
+  <ul class="chips">
+   <li data-t="chip1">Guides in English · Español · Русский</li>
+   <li data-t="chip2">Personal reply, usually the same day</li>
+  </ul>
+ </div>
 </section>
-<section id="destinations">
-<div aria-hidden="true" class="mesh mesh-a"></div>
-<div class="wrap">
-<div class="section-head reveal">
-<p class="kicker" data-i18n="k13">Where to next</p>
-<h2 data-i18n="k14">Pick a corner of the map</h2>
-<p data-i18n="k15">Browse by region. This pilot lights up Africa — specifically South Africa. Everywhere else is warming up (we're impatient about it too).</p>
-</div>
-<div aria-label="Continents" class="region-tabs" data-i18n-al="k167" role="tablist">
-<button aria-controls="panel-africa" aria-selected="true" class="region-tab" data-region="africa" id="tab-africa" role="tab">
-<img alt="" loading="lazy" src="img/africa.jpg"/><span><b class="rn" data-i18n="k16">Africa</b><small data-i18n="k17">Live · South Africa</small></span>
-</button>
-<button aria-controls="panel-europe" aria-selected="false" class="region-tab" data-region="europe" id="tab-europe" role="tab">
-<img alt="" loading="lazy" src="img/europe.jpg"/><span><b class="rn" data-i18n="k18">Europe</b><small data-i18n="k19">Coming soon</small></span>
-</button>
-<button aria-controls="panel-asia" aria-selected="false" class="region-tab" data-region="asia" id="tab-asia" role="tab">
-<img alt="" loading="lazy" src="img/asia.jpg"/><span><b class="rn" data-i18n="k20">Asia</b><small data-i18n="k19">Coming soon</small></span>
-</button>
-<button aria-controls="panel-americas" aria-selected="false" class="region-tab" data-region="americas" id="tab-americas" role="tab">
-<img alt="" loading="lazy" src="img/americas.jpg"/><span><b class="rn" data-i18n="k21">Americas</b><small data-i18n="k19">Coming soon</small></span>
-</button>
-<button aria-controls="panel-me" aria-selected="false" class="region-tab" data-region="me" id="tab-me" role="tab">
-<img alt="" loading="lazy" src="img/middleeast.jpg"/><span><b class="rn" data-i18n="k22">Middle East</b><small data-i18n="k19">Coming soon</small></span>
-</button>
-</div>
-<div aria-labelledby="tab-africa" class="region-panel" id="panel-africa" role="tabpanel">
-<div class="country-grid reveal">
-<div class="country-chip active" data-i18n="k23">South Africa <span class="badge-live">Live</span></div>
-<div class="country-chip" data-i18n="k24">Namibia <span class="badge-soon">Soon</span></div>
-<div class="country-chip" data-i18n="k25">Botswana <span class="badge-soon">Soon</span></div>
-<div class="country-chip" data-i18n="k26">Mozambique <span class="badge-soon">Soon</span></div>
-<div class="country-chip" data-i18n="k27">Kenya <span class="badge-soon">Soon</span></div>
-<div class="country-chip" data-i18n="k28">Tanzania <span class="badge-soon">Soon</span></div>
-</div>
-</div>
-<div aria-labelledby="tab-europe" class="region-panel" hidden="" id="panel-europe" role="tabpanel">
-<div class="coming-soon"><strong data-i18n="k29">Europe — coming soon</strong><p data-i18n="k30">We're sketching cheeky itineraries. South Africa is ready when you are.</p></div>
-</div>
-<div aria-labelledby="tab-asia" class="region-panel" hidden="" id="panel-asia" role="tabpanel">
-<div class="coming-soon"><strong data-i18n="k31">Asia — coming soon</strong><p data-i18n="k32">Watch this space. For now, the Cape is calling.</p></div>
-</div>
-<div aria-labelledby="tab-americas" class="region-panel" hidden="" id="panel-americas" role="tabpanel">
-<div class="coming-soon"><strong data-i18n="k33">Americas — coming soon</strong><p data-i18n="k34">Big landscapes are on the roadmap. Start with Africa while we build.</p></div>
-</div>
-<div aria-labelledby="tab-me" class="region-panel" hidden="" id="panel-me" role="tabpanel">
-<div class="coming-soon"><strong data-i18n="k35">Middle East — coming soon</strong><p data-i18n="k36">Desert drama is brewing. Meanwhile, South Africa is live.</p></div>
-</div>
-</div>
+
+<section id="services" aria-labelledby="svc-h">
+ <div class="wrap">
+  <div class="sec-h"><div><h2 id="svc-h" data-t="svc_h">How can we help?</h2><p data-t="svc_p">Pick a service. We'll come back with a plan and a quote.</p></div></div>
+  <div class="grid svc">
+   <article class="card"><img src="img/full-package.webp" alt="Guests on an open safari vehicle" width="720" height="529" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s1t">Full package adventure</h3><p data-t="s1d">Everything handled, from first idea to last sunset.</p><a class="btn btn-p btn-sm" href="#contact" data-open="full-package" data-t="quote">Get your quote</a></div></article>
+   <article class="card"><img src="img/guides.webp" alt="Hikers resting on a mountain summit above the sea" width="720" height="540" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s2t">Professional tour guides</h3><p data-t="s2d">Private guides in English, Spanish and Russian.</p><a class="btn btn-p btn-sm" href="#contact" data-open="guides" data-t="enquire">Enquire</a></div></article>
+   <article class="card"><img src="img/itinerary.webp" alt="Vineyards in front of mountains" width="720" height="480" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s3t">Your itinerary design</h3><p data-t="s3d">A day-by-day plan built around you.</p><a class="btn btn-p btn-sm" href="#contact" data-open="itinerary" data-t="quote">Get your quote</a></div></article>
+   <article class="card"><img src="img/bookings.webp" alt="A sailing boat passing coastal cliffs" width="720" height="478" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s4t">Bookings</h3><p data-t="s4d">Activities, restaurants, flights and more, booked for you.</p><a class="btn btn-p btn-sm" href="#contact" data-open="bookings" data-t="enquire">Enquire</a></div></article>
+  </div>
+  <ol class="steps" aria-label="How it works">
+   <li data-t="st1">Tell us what you want</li><li data-t="st2">Get your plan and quote</li><li data-t="st3">Go and enjoy</li>
+  </ol>
+ </div>
 </section>
-<section id="south-africa">
-<div aria-hidden="true" class="mesh mesh-b"></div>
-<div class="wrap">
-<div class="section-head reveal">
-<p class="kicker" data-i18n="k2">South Africa</p>
-<h2 data-i18n="k37">Experiences first. Museums optional.</h2>
-<p data-i18n="k38">Built with a Cape Town guide's eye — safaris, city days, ocean thrills and the logistics that make a trip feel easy.</p>
-</div>
-<div class="sa-intro reveal">
-<div class="glass-card">
-<img alt="Brightly painted houses along Wale Street in Bo-Kaap, Cape Town, with Signal Hill behind" data-i18n-alt="k176" loading="lazy" src="img/bokaap.jpg"/>
-<div class="body">
-<h3 data-i18n="k39">Run by someone who actually lives here</h3>
-<p data-i18n="k40" style="color:var(--muted)">Yuli (Yu Ladysh) is a Cape Town tour guide and co-owner of Howzit, a co-working space in Sea Point. She plans trips for adventurous travellers who want feeling over filler — in English, Spanish or Russian.</p>
-<div aria-label="Guide languages" class="lang-row" data-i18n-al="k168">
-<span class="lang" data-i18n="k41"><i>🇬🇧</i> English</span>
-<span class="lang" data-i18n="k42"><i>🇪🇸</i> Spanish</span>
-<span class="lang" data-i18n="k43"><i>🇷🇺</i> Russian</span>
-</div>
-</div>
-</div>
-<div class="glass-card">
-<img alt="Elephant drinking at a waterhole in Kruger National Park" data-i18n-alt="k177" loading="lazy" src="img/safari-intro.jpg"/>
-<div class="body">
-<h3 data-i18n="k44">Private guides, your pace</h3>
-<p data-i18n="k45" style="color:var(--muted)">Day outings or multi-day routes. We tailor around what you want to feel — wild, curious, salty, a bit breathless — then sort the moving parts.</p>
-</div>
-</div>
-</div>
-<div class="theme-band theme-safari sa-block reveal" style="margin-top:2.5rem">
-<div class="section-head">
-<p class="theme-kicker" data-i18n="k46">Safari trips</p>
-<h2 class="theme-title" data-i18n="k47">Big five energy (and malaria-free options)</h2>
-<p data-i18n="k48">From Kruger classics to quieter private reserves and an Eastern Cape route that suits families who prefer malaria-free bush.</p>
-</div>
-<div class="card-grid">
-<article class="card">
-<img alt="Elephant and calf crossing a road in Kruger National Park" data-i18n-alt="k178" loading="lazy" src="img/elephants.jpg"/>
-<div class="body"><span class="tag" data-i18n="k49">Kruger</span><h3 data-i18n="k50">Kruger National Park</h3><p data-i18n="k51">Self-drive feel or guided game drives into one of Africa's best-known parks — vast landscapes, prolific wildlife and proper bush mornings.</p></div>
-</article>
-<article class="card">
-<img alt="Guests on an open game-drive vehicle at Sabi Sabi private game reserve" data-i18n-alt="k179" loading="lazy" src="img/safari.jpg"/>
-<div class="body"><span class="tag" data-i18n="k52">Private reserves</span><h3 data-i18n="k53">Private game reserves</h3><p data-i18n="k54">More intimate bush time bordering Kruger and beyond — fewer vehicles, flexible drives and that “just us and the wild” atmosphere.</p></div>
-</article>
-<article class="card">
-<img alt="Elephant herd at a waterhole in Addo Elephant National Park, Eastern Cape" data-i18n-alt="k180" loading="lazy" src="img/addo.jpg"/>
-<div class="body"><span class="tag" data-i18n="k55">Malaria-free</span><h3 data-i18n="k56">Eastern Cape safari</h3><p data-i18n="k57">A malaria-free Big Five option in the Eastern Cape — ideal if you want wildlife without the prophylaxis conversation.</p></div>
-</article>
-<article class="card">
-<img alt="Yacht sailing through the Knysna Heads on the Garden Route" data-i18n-alt="k181" loading="lazy" src="img/gardenroute.jpg"/>
-<div class="body"><span class="tag" data-i18n="k58">Road trip</span><h3 data-i18n="k59">Garden Route + safari add-ons</h3><p data-i18n="k60">Coastal forests, lagoons and mountain passes — pair a Garden Route drive with a bush stop for contrast without the rush.</p></div>
-</article>
-</div>
-</div>
-<div class="section-head reveal" style="margin-top:3rem">
-<p class="kicker" data-i18n="k61">Excursions</p>
-<h2 data-i18n="k62">Cape Town days that don't bore you stiff</h2>
-<p data-i18n="k63">Grouped by vibe — city colour, wine country elegance, ocean adrenaline and rugged mountain play.</p>
-</div>
-<div class="theme-band theme-city reveal">
-<div class="carousel-head">
-<div class="section-head" style="margin-bottom:0">
-<p class="theme-kicker" data-i18n="k64">City · street · harbour</p>
-<h2 class="theme-title" data-i18n="k65">Cape Town neon &amp; Bo-Kaap colour</h2>
-<p data-i18n="k66">Neighbourhoods, posters, harbour lights — the city as a playground, not a checklist.</p>
-</div>
-<div class="carousel-controls">
-<button aria-label="Previous city" data-car="cityCar" data-dir="-1" data-i18n-al="k169" type="button">‹</button>
-<button aria-label="Next city" data-car="cityCar" data-dir="1" data-i18n-al="k170" type="button">›</button>
-</div>
-</div>
-<div aria-label="City excursions" class="carousel" data-i18n-al="k171" id="cityCar" tabindex="0">
-<article class="card"><img alt="Colourful Bo-Kaap houses with Table Mountain in the background" data-i18n-alt="k182" loading="lazy" src="img/bokaap-card.jpg"/><div class="body"><span class="tag" data-i18n="k67">City</span><h3 data-i18n="k68">Cape Town &amp; Bo-Kaap</h3><p data-i18n="k69">Neighbourhood wandering with context — Bo-Kaap's colour and heritage, city viewpoints and the stories locals actually tell.</p></div></article>
-<article class="card"><img alt="Boats in the V&amp;A Waterfront harbour with Table Mountain behind" data-i18n-alt="k183" loading="lazy" src="img/waterfront.jpg"/><div class="body"><span class="tag" data-i18n="k70">Harbour</span><h3 data-i18n="k71">V&amp;A Waterfront</h3><p data-i18n="k72">Working harbour energy, shops, sea air and an easy launchpad for harbour cruises or a sundowner after a mountain day.</p></div></article>
-<article class="card"><img alt="Waves breaking on the Robben Island shore, with Table Mountain across the bay" data-i18n-alt="k184" loading="lazy" src="img/robben.jpg"/><div class="body"><span class="tag" data-i18n="k73">History</span><h3 data-i18n="k74">Robben Island</h3><p data-i18n="k75">A ferry across Table Bay to a site that shaped modern South Africa — guided visits that prioritise story over spectacle.</p></div></article>
-</div>
-</div>
-<div class="theme-band theme-wine reveal">
-<div class="section-head">
-<p class="theme-kicker" data-i18n="k76">Wine routes</p>
-<h2 class="theme-title" data-i18n="k77">Constantia &amp; the Winelands</h2>
-<p data-i18n="k78">Experiences over endless tasting flights — estate walks, food pairings, garden time and vineyard views.</p>
-</div>
-<div class="theme-grid">
-<article class="card"><img alt="The Cape Dutch manor house at Groot Constantia wine estate" data-i18n-alt="k185" loading="lazy" src="img/winelands.jpg"/><div class="body"><span class="tag" data-i18n="k79">Experiences</span><h3 data-i18n="k80">Constantia &amp; Winelands</h3><p data-i18n="k81">More than tasting flights — estate walks, food pairings, garden time and vineyard views in Constantia and the wider Cape Winelands.</p></div></article>
-<article class="card"><img alt="Vineyards at Groot Constantia estate beneath the Constantiaberg" data-i18n-alt="k186" loading="lazy" src="img/estate.jpg"/><div class="body"><span class="tag" data-i18n="k82">Slow days</span><h3 data-i18n="k83">Estate time, not just pours</h3><p data-i18n="k84">Think picnic lawns, cellar stories and golden-hour light — framed as experiences for curious travellers, not a pub crawl with a view.</p></div></article>
-</div>
-</div>
-<div class="theme-band theme-ocean reveal">
-<div class="carousel-head">
-<div class="section-head" style="margin-bottom:0">
-<p class="theme-kicker" data-i18n="k85">Ocean · whales · deep blue</p>
-<h2 class="theme-title" data-i18n="k86">Salt air &amp; sea stories</h2>
-<p data-i18n="k87">Peninsula cliffs, penguins, Hermanus whales and cage-diving thrills when the ocean says yes.</p>
-</div>
-<div class="carousel-controls">
-<button aria-label="Previous ocean" data-car="oceanCar" data-dir="-1" data-i18n-al="k172" type="button">‹</button>
-<button aria-label="Next ocean" data-car="oceanCar" data-dir="1" data-i18n-al="k173" type="button">›</button>
-</div>
-</div>
-<div aria-label="Ocean excursions" class="carousel" data-i18n-al="k174" id="oceanCar" tabindex="0">
-<article class="card"><img alt="African penguin at Boulders Beach near Simon’s Town" data-i18n-alt="k187" loading="lazy" src="img/penguins.jpg"/><div class="body"><span class="tag" data-i18n="k88">Peninsula</span><h3 data-i18n="k89">Cape Peninsula &amp; Cape Point</h3><p data-i18n="k90">Chapman's Peak drama, Cape Point cliffs and a stop with the African penguins at Boulders — a full day that earns its photos.</p></div></article>
-<article class="card"><img alt="Southern right whale breaching in Walker Bay off Hermanus" data-i18n-alt="k188" loading="lazy" src="img/whale.jpg"/><div class="body"><span class="tag" data-i18n="k91">Seasonal</span><h3 data-i18n="k92">Whale watching · Hermanus</h3><p data-i18n="k93">In season, Southern Right whales cruise the Walker Bay coast — cliff paths and boat options when conditions play nice.</p></div></article>
-<article class="card"><img alt="Shark cage-diving boat at sea off Gansbaai" data-i18n-alt="k189" loading="lazy" src="img/shark.jpg"/><div class="body"><span class="tag" data-i18n="k94">Adrenaline</span><h3 data-i18n="k95">Shark cage diving</h3><p data-i18n="k96">Boat-based cage experiences along the Cape coast for travellers who want a controlled, close look at ocean predators.</p></div></article>
-</div>
-</div>
-<div class="theme-band theme-adventure reveal">
-<div class="section-head">
-<p class="theme-kicker" data-i18n="k97">Adventure · trails · sky</p>
-<h2 class="theme-title" data-i18n="k98">Hike high. Fly brief. Wipe out happily.</h2>
-<p data-i18n="k99">Mountain weather roulette, Signal Hill launches and Atlantic dune sessions — for when sitting still feels wrong.</p>
-</div>
-<div class="theme-grid cols-3">
-<article class="card"><img alt="Table Mountain seen across the water from Bloubergstrand" data-i18n-alt="k190" loading="lazy" src="img/tablemountain.jpg"/><div class="body"><span class="tag" data-i18n="k100">Icon</span><h3 data-i18n="k101">Table Mountain</h3><p data-i18n="k102">Cable car or hike, weather depending — summit views that make the city look like a toy set between mountain and sea.</p></div></article>
-<article class="card"><img alt="Hikers resting on the summit of Lion’s Head above Sea Point" data-i18n-alt="k191" loading="lazy" src="img/hiking.jpg"/><div class="body"><span class="tag" data-i18n="k103">Active</span><h3 data-i18n="k104">Hiking days</h3><p data-i18n="k105">Trail days on Table Mountain and surrounds — packed lunches optional, bragging rights included.</p></div></article>
-<article class="card"><img alt="Paraglider soaring above Lion’s Head with the Atlantic beyond" data-i18n-alt="k192" loading="lazy" src="img/peninsula.jpg"/><div class="body"><span class="tag" data-i18n="k106">Sky &amp; sand</span><h3 data-i18n="k107">Paraglide · sandboard</h3><p data-i18n="k108">Paragliding launches from Signal Hill when wind allows, and sandboarding on Atlantic dunes for the glorious wipeouts.</p></div></article>
-</div>
-</div>
-<div class="sa-block" style="margin-top:3rem">
-<div class="section-head reveal">
-<p class="kicker" data-i18n="k109">Practical extras</p>
-<h2 data-i18n="k110">Visa help, words &amp; somewhere to stash your kit</h2>
-<p data-i18n="k111">The unglamorous bits that make travel smoother — described plainly, without legal promises.</p>
-</div>
-<div class="bento reveal">
-<div class="bento-item wide">
-<div aria-hidden="true" class="emoji">🛂</div>
-<h3 data-i18n="k112">Visa support</h3>
-<p data-i18n="k113">Guidance on typical visitor requirements and document checklists for South Africa. We help you prepare; final decisions always rest with the authorities.</p>
-</div>
-<div class="bento-item tall">
-<div aria-hidden="true" class="emoji">🗣️</div>
-<h3 data-i18n="k114">Translation services</h3>
-<p data-i18n="k115">Need a menu decoded, a booking clarified or a conversation bridged? Translation support alongside guiding in English, Spanish and Russian.</p>
-</div>
-<div class="bento-item">
-<div aria-hidden="true" class="emoji">🧳</div>
-<h3 data-i18n="k116">Luggage &amp; gear storage</h3>
-<p data-i18n="k117">Travelling light between coastal days and safari? Ask about short-term luggage and outdoor-gear storage while you're out exploring.</p>
-</div>
-</div>
-</div>
-</div>
+
+<section class="ai" id="ai" aria-labelledby="ai-h">
+ <div class="wrap">
+  <div class="sec-h"><div><span class="tag" data-t="ai_tag">For travel businesses</span><h2 id="ai-h" data-t="ai_h">AI that works the night shift</h2><p data-t="ai_p">AI agents for DMCs, travel agents, tour operators and lodges.</p></div></div>
+  <div class="grid">
+   <div class="card"><div class="card-b"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-t="a1t">No enquiry waits</h3><p data-t="a1d">Agents read late-night requests and draft the proposal in your client's language by morning.</p></div></div>
+   <div class="card"><div class="card-b"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M9.5 12.5l2 2 3.5-4"/></svg></div><h3 data-t="a2t">You stay in charge</h3><p data-t="a2d">Nothing is sent, booked or paid without your yes: one tap on your phone.</p></div></div>
+   <div class="card"><div class="card-b"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div><h3 data-t="a3t">Back office handled</h3><p data-t="a3d">Supplier invoices filed by trip and proofs of payment sent back. No chasing.</p></div></div>
+   <div class="card"><div class="card-b"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3 data-t="a4t">Your knowledge, kept</h3><p data-t="a4d">Past itineraries, rates and contracts in one memory, even when people move on.</p></div></div>
+  </div>
+  <div class="actions">
+   <a class="btn btn-p" href="#contact" data-open="ai" data-t="ai_cta">Book a demo</a>
+   <a class="btn btn-o" href="#contact" data-open="ai" data-t="ai_cta2">Ask a question</a>
+  </div>
+ </div>
 </section>
-<section id="how" style="background:var(--bg-2)">
-<div aria-hidden="true" class="mesh mesh-c"></div>
-<div class="wrap">
-<div class="section-head reveal">
-<p class="kicker" data-i18n="k3">How it works</p>
-<h2 data-i18n="k118">Three steps. Zero fluff.</h2>
-<p data-i18n="k119">No mystery portal. Tell us what you want, we shape it, you go have the fun bit.</p>
-</div>
-<div class="steps">
-<div class="step reveal"><div class="step-num">1</div><h3 data-i18n="k120">Say what you're after</h3><p data-i18n="k121">Dates, vibe, must-dos, languages, comfort level. A rough sketch is enough — we ask the rest.</p></div>
-<div class="step reveal"><div class="step-num">2</div><h3 data-i18n="k122">We craft the plan</h3><p data-i18n="k123">Itinerary options with clear inclusions, timing and practical notes. Tweak until it feels right.</p></div>
-<div class="step reveal"><div class="step-num">3</div><h3 data-i18n="k124">Show up &amp; don't stop</h3><p data-i18n="k125">Guides, logistics and local know-how on the ground. You bring curiosity; we bring the Cape Town edge.</p></div>
-</div>
-</div>
-</section>
-<section id="why">
-<div class="wrap">
-<div class="section-head reveal">
-<p class="kicker" data-i18n="k4">Why us</p>
-<h2 data-i18n="k126">Honest reasons, no invented awards</h2>
-<p data-i18n="k127">We're a small Cape Town outfit building something cheeky. Here's what you can actually count on.</p>
-</div>
-<div class="why-grid">
-<div class="why reveal"><h3 data-i18n="k128">Local Cape Town guide</h3><p data-i18n="k129">Planned and often led by Yuli, who lives the city — Sea Point mornings, mountain weather apps, the lot.</p></div>
-<div class="why reveal"><h3 data-i18n="k130">Multilingual by design</h3><p data-i18n="k131">Private guiding available in English, Spanish and Russian, so nobody has to smile-and-nod through the good bits.</p></div>
-<div class="why reveal"><h3 data-i18n="k132">Experiences over checkbox tourism</h3><p data-i18n="k133">We lean into safari, outdoors, neighbourhoods and ocean — not endless indoor queues for the sake of it.</p></div>
-<div class="why reveal"><h3 data-i18n="k134">Tied into Howzit</h3><p data-i18n="k135">Co-owned Howzit coworking in Sea Point means a local base, community links and a place to land between adventures.</p></div>
-</div>
-</div>
-</section>
-<section id="contact">
-<div class="wrap">
-<div class="section-head reveal">
-<p class="kicker" data-i18n="k136">Contact</p>
-<h2 data-i18n="k137">Ready when you are</h2>
-<p data-i18n="k138">Send a rough idea — or just say hi. We'll reply from the Cape with next steps.</p>
-</div>
-<div class="contact-layout">
-<form class="form reveal" id="enquiryForm" novalidate="">
-<div class="form-grid">
-<label><span data-i18n="k139">Name</span><input autocomplete="name" data-i18n-ph="k158" name="name" placeholder="What should we call you?" required="" type="text"/></label>
-<label><span data-i18n="k140">Email</span><input autocomplete="email" data-i18n-ph="k159" name="email" placeholder="you@example.com" required="" type="email"/></label>
-<label><span data-i18n="k141">Rough dates / destination</span><input data-i18n-ph="k160" name="dates" placeholder="e.g. March · Cape Town + safari" type="text"/></label>
-<label><span data-i18n="k142">Preferred language</span><select name="language"><option data-i18n="k154" value="English">English</option><option data-i18n="k155" value="Spanish">Spanish</option><option data-i18n="k156" value="Russian">Russian</option><option data-i18n="k157" value="Other / mix">Other / mix</option></select>
-</label>
-<label><span data-i18n="k143">What do you fancy?</span><textarea data-i18n-ph="k161" name="message" placeholder="Safari? Peninsula day? Paragliding? Tell us the vibe." required="" rows="5"></textarea></label>
-</div>
-<div class="form-actions">
-<button class="btn btn-primary" data-i18n="k144" type="submit">Send enquiry</button>
-<a aria-label="Chat on WhatsApp" class="wa" data-i18n="k145" data-i18n-al="k175" href="https://wa.me/27710347336" rel="noopener noreferrer" target="_blank">WhatsApp · +27 71 034 7336</a>
-</div>
-<div aria-live="polite" class="thanks" data-i18n="k146" id="thanks" role="status">Thanks — your email client should open a message to <strong>hola.howzit@gmail.com</strong>. If it doesn't, write us there directly.</div>
-</form>
-<aside class="contact-aside reveal">
-<h3 data-i18n="k147">Prefer a quick ping?</h3>
-<p data-i18n="k148">WhatsApp is often fastest for timing questions and last-minute Cape weather calls.</p>
-<ul>
-<li data-i18n="k149">Email: hola.howzit@gmail.com</li>
-<li data-i18n="k150">Based in Sea Point, Cape Town</li>
-<li data-i18n="k151">Guides: EN · ES · RU</li>
-</ul>
-</aside>
-</div>
-</div>
+
+<section class="contact" id="contact" aria-labelledby="c-h">
+ <div class="wrap">
+  <h2 id="c-h" data-t="c_h">Ready when you are</h2>
+  <p data-t="c_p">Send an enquiry or message us on WhatsApp.</p>
+  <div class="actions">
+   <a class="btn btn-p" href="#contact" data-open="" data-t="c_form">Send an enquiry</a>
+   <a class="btn btn-o wa-link" href="https://wa.me/27710347336?text=Hi%20Now-Now%20Adventures!%20I%27d%20like%20to%20plan%20a%20trip." target="_blank" rel="noopener" data-t="c_wa">WhatsApp us</a>
+  </div>
+ </div>
 </section>
 </main>
+
 <footer>
-<div class="wrap footer-inner">
-<div>
-<div class="footer-brand">Now-Now Adventures</div>
-<p data-i18n="k152">Pilot site · Adventurous travel from Cape Town outwards.</p>
-</div>
-<div class="footer-meta">
-<a data-i18n="k1" href="#destinations">Destinations</a>
-<a data-i18n="k2" href="#south-africa">South Africa</a>
-<a data-i18n="k153" href="#contact">Enquire</a>
-<span>© <span id="year"></span> Now-Now Adventures</span>
-</div>
-</div>
+ <div class="wrap">
+  <span>© 2026 Now-Now Adventures</span>
+  <nav aria-label="Footer"><a href="#services" data-t="nav_services">Services</a><a href="#ai" data-t="nav_ai">For travel businesses</a><a href="#contact" data-open="" data-t="enquire">Enquire</a></nav>
+ </div>
 </footer>
+
+<a class="wa wa-link" href="https://wa.me/27710347336?text=Hi%20Now-Now%20Adventures!%20I%27d%20like%20to%20plan%20a%20trip." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" data-t-al="wa_al">
+ <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3z"/></svg>
+ <span>WhatsApp</span>
+</a>
+
+<dialog id="enq" aria-labelledby="enq-h">
+ <div class="dlg">
+  <div class="dlg-h"><h2 id="enq-h" data-t="f_h">Tell us your plans</h2><button class="x" type="button" data-close aria-label="Close" data-t-al="close">×</button></div>
+  <form id="enqForm" novalidate>
+   <label><span data-t="f_service">I'm interested in</span>
+    <select name="service" id="fService" required>
+     <option value="full-package" data-t="s1t">Full package adventure</option>
+     <option value="guides" data-t="s2t">Professional tour guides</option>
+     <option value="itinerary" data-t="s3t">Your itinerary design</option>
+     <option value="bookings" data-t="s4t">Bookings</option>
+     <option value="ai" data-t="o_ai">AI for my travel business</option>
+    </select></label>
+   <div class="row">
+    <label><span data-t="f_name">Name</span><input name="name" autocomplete="name" required></label>
+    <label><span data-t="f_email">Email</span><input name="email" type="email" autocomplete="email" required></label>
+   </div>
+   <label><span data-t="f_phone">WhatsApp or phone (optional)</span><input name="phone" type="tel" autocomplete="tel"></label>
+   <label><span data-t="f_msg">Dates, group size, what you'd love</span><textarea name="message" required></textarea></label>
+   <label><span data-t="f_lang">Reply in</span>
+    <select name="reply_language"><option>English</option><option>Español</option><option>Русский</option></select></label>
+   <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+   <button class="btn btn-p" type="submit" data-t="f_send">Send enquiry</button>
+   <p class="status" id="fStatus" role="status" aria-live="polite"></p>
+  </form>
+ </div>
+</dialog>
+
 <script>
 (function(){
-  const nav=document.getElementById('nav');
-  const menuBtn=document.getElementById('menuBtn');
-  const navLinks=document.getElementById('navLinks');
-  menuBtn.addEventListener('click',()=>{
-    const open=nav.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded',open?'true':'false');
-    menuBtn.setAttribute('aria-label',open?I18N_JS[curLang].close:I18N_JS[curLang].open);
-  });
-  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-    nav.classList.remove('open');
-    menuBtn.setAttribute('aria-expanded','false');
-  }));
-  document.getElementById('year').textContent=new Date().getFullYear();
-
-  const tabs=[...document.querySelectorAll('.region-tab')];
-  const panels={africa:document.getElementById('panel-africa'),europe:document.getElementById('panel-europe'),asia:document.getElementById('panel-asia'),americas:document.getElementById('panel-americas'),me:document.getElementById('panel-me')};
-  tabs.forEach(tab=>tab.addEventListener('click',()=>{
-    const region=tab.dataset.region;
-    tabs.forEach(t=>t.setAttribute('aria-selected',t===tab?'true':'false'));
-    Object.entries(panels).forEach(([key,panel])=>{panel.hidden=key!==region});
-  }));
-
-  document.querySelectorAll('.carousel-controls button[data-car]').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const car=document.getElementById(btn.dataset.car);
-      if(!car) return;
-      const delta=Math.min(340, car.clientWidth*0.85)*Number(btn.dataset.dir||1);
-      car.scrollBy({left:delta,behavior:'smooth'});
-    });
-  });
-
-  const form=document.getElementById('enquiryForm');
-  const thanks=document.getElementById('thanks');
-  form.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    const data=new FormData(form);
-    const name=(data.get('name')||'').toString().trim();
-    const email=(data.get('email')||'').toString().trim();
-    const dates=(data.get('dates')||'').toString().trim();
-    const language=(data.get('language')||'').toString().trim();
-    const message=(data.get('message')||'').toString().trim();
-    if(!name||!email||!message){thanks.textContent=I18N_JS[curLang].fill;thanks.classList.add('show');return;}
-    const J=I18N_JS[curLang];const subject=encodeURIComponent(J.subject);
-    const body=encodeURIComponent(`${J.name}: ${name}\n${J.email}: ${email}\n${J.dates}: ${dates||'—'}\n${J.lang}: ${language}\n\n${message}`);
-    thanks.innerHTML=I18N.t[curLang][thanks.dataset.i18n];thanks.classList.add('show');
-    window.location.href=`mailto:hola.howzit@gmail.com?subject=${subject}&body=${body}`;
-  });
-
-  const io=new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in');io.unobserve(entry.target);}});
-  },{threshold:0.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-})();
-</script>
-<script>
-const I18N={"t": {"en": {"k0": "Skip to content", "k1": "Destinations", "k2": "South Africa", "k3": "How it works", "k4": "Why us", "k5": "Plan a trip", "k6": "<span aria-hidden=\"true\" class=\"dot\"></span> Cape Town · Experiences · Private guides", "k7": "Adventure? <em>Now-now.</em>", "k8": "<strong>(Actually, right now.)</strong> Adventurous travel for people who want the real stuff — safaris, mountain air, penguins, waves and stories — not another dusty museum shuffle.", "k9": "Explore South Africa", "k10": "Tell us what you fancy", "k11": "In South Africa, “now-now” means soon-ish. We reply properly now-now — usually the same day.", "k12": "Safari mornings<i>·</i>Bo-Kaap colour<i>·</i>Table Mountain weather roulette<i>·</i>Cape Point cliffs<i>·</i>Penguin meet-cutes<i>·</i>Winelands walks<i>·</i>Whale season drama<i>·</i>Shark cage heart-rates<i>·</i>Signal Hill launches<i>·</i>Sandboard wipeouts<i>·</i>Luggage babysitting<i>·</i>Adventure now-now<i>·</i>", "k13": "Where to next", "k14": "Pick a corner of the map", "k15": "Browse by region. This pilot lights up Africa — specifically South Africa. Everywhere else is warming up (we're impatient about it too).", "k16": "Africa", "k17": "Live · South Africa", "k18": "Europe", "k19": "Coming soon", "k20": "Asia", "k21": "Americas", "k22": "Middle East", "k23": "South Africa <span class=\"badge-live\">Live</span>", "k24": "Namibia <span class=\"badge-soon\">Soon</span>", "k25": "Botswana <span class=\"badge-soon\">Soon</span>", "k26": "Mozambique <span class=\"badge-soon\">Soon</span>", "k27": "Kenya <span class=\"badge-soon\">Soon</span>", "k28": "Tanzania <span class=\"badge-soon\">Soon</span>", "k29": "Europe — coming soon", "k30": "We're sketching cheeky itineraries. South Africa is ready when you are.", "k31": "Asia — coming soon", "k32": "Watch this space. For now, the Cape is calling.", "k33": "Americas — coming soon", "k34": "Big landscapes are on the roadmap. Start with Africa while we build.", "k35": "Middle East — coming soon", "k36": "Desert drama is brewing. Meanwhile, South Africa is live.", "k37": "Experiences first. Museums optional.", "k38": "Built with a Cape Town guide's eye — safaris, city days, ocean thrills and the logistics that make a trip feel easy.", "k39": "Run by someone who actually lives here", "k40": "Yuli (Yu Ladysh) is a Cape Town tour guide and co-owner of Howzit, a co-working space in Sea Point. She plans trips for adventurous travellers who want feeling over filler — in English, Spanish or Russian.", "k41": "<i>🇬🇧</i> English", "k42": "<i>🇪🇸</i> Spanish", "k43": "<i>🇷🇺</i> Russian", "k44": "Private guides, your pace", "k45": "Day outings or multi-day routes. We tailor around what you want to feel — wild, curious, salty, a bit breathless — then sort the moving parts.", "k46": "Safari trips", "k47": "Big five energy (and malaria-free options)", "k48": "From Kruger classics to quieter private reserves and an Eastern Cape route that suits families who prefer malaria-free bush.", "k49": "Kruger", "k50": "Kruger National Park", "k51": "Self-drive feel or guided game drives into one of Africa's best-known parks — vast landscapes, prolific wildlife and proper bush mornings.", "k52": "Private reserves", "k53": "Private game reserves", "k54": "More intimate bush time bordering Kruger and beyond — fewer vehicles, flexible drives and that “just us and the wild” atmosphere.", "k55": "Malaria-free", "k56": "Eastern Cape safari", "k57": "A malaria-free Big Five option in the Eastern Cape — ideal if you want wildlife without the prophylaxis conversation.", "k58": "Road trip", "k59": "Garden Route + safari add-ons", "k60": "Coastal forests, lagoons and mountain passes — pair a Garden Route drive with a bush stop for contrast without the rush.", "k61": "Excursions", "k62": "Cape Town days that don't bore you stiff", "k63": "Grouped by vibe — city colour, wine country elegance, ocean adrenaline and rugged mountain play.", "k64": "City · street · harbour", "k65": "Cape Town neon &amp; Bo-Kaap colour", "k66": "Neighbourhoods, posters, harbour lights — the city as a playground, not a checklist.", "k67": "City", "k68": "Cape Town &amp; Bo-Kaap", "k69": "Neighbourhood wandering with context — Bo-Kaap's colour and heritage, city viewpoints and the stories locals actually tell.", "k70": "Harbour", "k71": "V&amp;A Waterfront", "k72": "Working harbour energy, shops, sea air and an easy launchpad for harbour cruises or a sundowner after a mountain day.", "k73": "History", "k74": "Robben Island", "k75": "A ferry across Table Bay to a site that shaped modern South Africa — guided visits that prioritise story over spectacle.", "k76": "Wine routes", "k77": "Constantia &amp; the Winelands", "k78": "Experiences over endless tasting flights — estate walks, food pairings, garden time and vineyard views.", "k79": "Experiences", "k80": "Constantia &amp; Winelands", "k81": "More than tasting flights — estate walks, food pairings, garden time and vineyard views in Constantia and the wider Cape Winelands.", "k82": "Slow days", "k83": "Estate time, not just pours", "k84": "Think picnic lawns, cellar stories and golden-hour light — framed as experiences for curious travellers, not a pub crawl with a view.", "k85": "Ocean · whales · deep blue", "k86": "Salt air &amp; sea stories", "k87": "Peninsula cliffs, penguins, Hermanus whales and cage-diving thrills when the ocean says yes.", "k88": "Peninsula", "k89": "Cape Peninsula &amp; Cape Point", "k90": "Chapman's Peak drama, Cape Point cliffs and a stop with the African penguins at Boulders — a full day that earns its photos.", "k91": "Seasonal", "k92": "Whale watching · Hermanus", "k93": "In season, Southern Right whales cruise the Walker Bay coast — cliff paths and boat options when conditions play nice.", "k94": "Adrenaline", "k95": "Shark cage diving", "k96": "Boat-based cage experiences along the Cape coast for travellers who want a controlled, close look at ocean predators.", "k97": "Adventure · trails · sky", "k98": "Hike high. Fly brief. Wipe out happily.", "k99": "Mountain weather roulette, Signal Hill launches and Atlantic dune sessions — for when sitting still feels wrong.", "k100": "Icon", "k101": "Table Mountain", "k102": "Cable car or hike, weather depending — summit views that make the city look like a toy set between mountain and sea.", "k103": "Active", "k104": "Hiking days", "k105": "Trail days on Table Mountain and surrounds — packed lunches optional, bragging rights included.", "k106": "Sky &amp; sand", "k107": "Paraglide · sandboard", "k108": "Paragliding launches from Signal Hill when wind allows, and sandboarding on Atlantic dunes for the glorious wipeouts.", "k109": "Practical extras", "k110": "Visa help, words &amp; somewhere to stash your kit", "k111": "The unglamorous bits that make travel smoother — described plainly, without legal promises.", "k112": "Visa support", "k113": "Guidance on typical visitor requirements and document checklists for South Africa. We help you prepare; final decisions always rest with the authorities.", "k114": "Translation services", "k115": "Need a menu decoded, a booking clarified or a conversation bridged? Translation support alongside guiding in English, Spanish and Russian.", "k116": "Luggage &amp; gear storage", "k117": "Travelling light between coastal days and safari? Ask about short-term luggage and outdoor-gear storage while you're out exploring.", "k118": "Three steps. Zero fluff.", "k119": "No mystery portal. Tell us what you want, we shape it, you go have the fun bit.", "k120": "Say what you're after", "k121": "Dates, vibe, must-dos, languages, comfort level. A rough sketch is enough — we ask the rest.", "k122": "We craft the plan", "k123": "Itinerary options with clear inclusions, timing and practical notes. Tweak until it feels right.", "k124": "Show up &amp; don't stop", "k125": "Guides, logistics and local know-how on the ground. You bring curiosity; we bring the Cape Town edge.", "k126": "Honest reasons, no invented awards", "k127": "We're a small Cape Town outfit building something cheeky. Here's what you can actually count on.", "k128": "Local Cape Town guide", "k129": "Planned and often led by Yuli, who lives the city — Sea Point mornings, mountain weather apps, the lot.", "k130": "Multilingual by design", "k131": "Private guiding available in English, Spanish and Russian, so nobody has to smile-and-nod through the good bits.", "k132": "Experiences over checkbox tourism", "k133": "We lean into safari, outdoors, neighbourhoods and ocean — not endless indoor queues for the sake of it.", "k134": "Tied into Howzit", "k135": "Co-owned Howzit coworking in Sea Point means a local base, community links and a place to land between adventures.", "k136": "Contact", "k137": "Ready when you are", "k138": "Send a rough idea — or just say hi. We'll reply from the Cape with next steps.", "k139": "Name", "k140": "Email", "k141": "Rough dates / destination", "k142": "Preferred language", "k143": "What do you fancy?", "k144": "Send enquiry", "k145": "WhatsApp · +27 71 034 7336", "k146": "Thanks — your email client should open a message to <strong>hola.howzit@gmail.com</strong>. If it doesn't, write us there directly.", "k147": "Prefer a quick ping?", "k148": "WhatsApp is often fastest for timing questions and last-minute Cape weather calls.", "k149": "Email: hola.howzit@gmail.com", "k150": "Based in Sea Point, Cape Town", "k151": "Guides: EN · ES · RU", "k152": "Pilot site · Adventurous travel from Cape Town outwards.", "k153": "Enquire", "k154": "English", "k155": "Spanish", "k156": "Russian", "k157": "Other / mix", "k158": "What should we call you?", "k159": "you@example.com", "k160": "e.g. March · Cape Town + safari", "k161": "Safari? Peninsula day? Paragliding? Tell us the vibe.", "k162": "Now-Now Adventures home", "k163": "Open menu", "k164": "Primary", "k165": "Hero", "k166": "Aerial view of Cape Town with Table Mountain, Lion’s Head and Signal Hill", "k167": "Continents", "k168": "Guide languages", "k169": "Previous city", "k170": "Next city", "k171": "City excursions", "k172": "Previous ocean", "k173": "Next ocean", "k174": "Ocean excursions", "k175": "Chat on WhatsApp", "k176": "Brightly painted houses along Wale Street in Bo-Kaap, Cape Town, with Signal Hill behind", "k177": "Elephant drinking at a waterhole in Kruger National Park", "k178": "Elephant and calf crossing a road in Kruger National Park", "k179": "Guests on an open game-drive vehicle at Sabi Sabi private game reserve", "k180": "Elephant herd at a waterhole in Addo Elephant National Park, Eastern Cape", "k181": "Yacht sailing through the Knysna Heads on the Garden Route", "k182": "Colourful Bo-Kaap houses with Table Mountain in the background", "k183": "Boats in the V&amp;A Waterfront harbour with Table Mountain behind", "k184": "Waves breaking on the Robben Island shore, with Table Mountain across the bay", "k185": "The Cape Dutch manor house at Groot Constantia wine estate", "k186": "Vineyards at Groot Constantia estate beneath the Constantiaberg", "k187": "African penguin at Boulders Beach near Simon’s Town", "k188": "Southern right whale breaching in Walker Bay off Hermanus", "k189": "Shark cage-diving boat at sea off Gansbaai", "k190": "Table Mountain seen across the water from Bloubergstrand", "k191": "Hikers resting on the summit of Lion’s Head above Sea Point", "k192": "Paraglider soaring above Lion’s Head with the Atlantic beyond", "k193": "Language"}, "ru": {"k0": "Перейти к содержанию", "k1": "Направления", "k2": "ЮАР", "k3": "Как это работает", "k4": "Почему мы", "k5": "Спланировать поездку", "k6": "<span aria-hidden=\"true\" class=\"dot\"></span> Кейптаун · Впечатления · Частные гиды", "k7": "Приключения? <em>Now-now.</em>", "k8": "<strong>(Ладно, прямо сейчас.)</strong> Путешествия для тех, кому нужно настоящее: сафари, горный воздух, пингвины, волны и истории — а не очередной поход по пыльным музеям.", "k9": "Открыть ЮАР", "k10": "Расскажите, чего хочется", "k11": "В ЮАР «now-now» — это «вот-вот, чуть позже». А мы отвечаем now-now по-настоящему — обычно в тот же день.", "k12": "Утра на сафари<i>·</i>Краски Бо-Каапа<i>·</i>Погодная рулетка Столовой горы<i>·</i>Скалы мыса Кейп-Пойнт<i>·</i>Свидания с пингвинами<i>·</i>Прогулки по винодельням<i>·</i>Сезон китов<i>·</i>Пульс в клетке с акулами<i>·</i>Старты с Сигнал-Хилла<i>·</i>Падения с сэндборда<i>·</i>Присмотр за багажом<i>·</i>Приключения now-now<i>·</i>", "k13": "Куда дальше", "k14": "Выберите уголок карты", "k15": "Выбирайте регион. В этой пилотной версии светится Африка — точнее, ЮАР. Остальные направления на подходе (нам и самим не терпится).", "k16": "Африка", "k17": "Уже открыто · ЮАР", "k18": "Европа", "k19": "Скоро", "k20": "Азия", "k21": "Америка", "k22": "Ближний Восток", "k23": "ЮАР <span class=\"badge-live\">Открыто</span>", "k24": "Намибия <span class=\"badge-soon\">Скоро</span>", "k25": "Ботсвана <span class=\"badge-soon\">Скоро</span>", "k26": "Мозамбик <span class=\"badge-soon\">Скоро</span>", "k27": "Кения <span class=\"badge-soon\">Скоро</span>", "k28": "Танзания <span class=\"badge-soon\">Скоро</span>", "k29": "Европа — скоро", "k30": "Мы уже набрасываем дерзкие маршруты. А ЮАР готова хоть сейчас.", "k31": "Азия — скоро", "k32": "Следите за новостями. А пока вас зовёт Кейп.", "k33": "Америка — скоро", "k34": "Большие пейзажи уже в планах. Пока мы строим — начните с Африки.", "k35": "Ближний Восток — скоро", "k36": "Пустынная драма уже готовится. А ЮАР открыта прямо сейчас.", "k37": "Сначала впечатления. Музеи — по желанию.", "k38": "Собрано взглядом кейптаунского гида: сафари, дни в городе, океанский адреналин и логистика, с которой поездка идёт легко.", "k39": "Ведёт человек, который здесь живёт", "k40": "Юли (Yu Ladysh) — гид в Кейптауне и совладелица Howzit, коворкинга в Си-Пойнте. Она планирует поездки для любителей приключений, которым важны эмоции, а не галочки, — на английском, испанском или русском.", "k41": "<i>🇬🇧</i> Английский", "k42": "<i>🇪🇸</i> Испанский", "k43": "<i>🇷🇺</i> Русский", "k44": "Частные гиды, ваш темп", "k45": "Однодневные выезды или маршруты на несколько дней. Подстраиваемся под то, что хочется почувствовать — дикость, любопытство, солёный ветер, лёгкую одышку, — а всю организацию берём на себя.", "k46": "Сафари", "k47": "Энергия «большой пятёрки» (и варианты без малярии)", "k48": "От классики Крюгера до тихих частных заповедников и маршрута по Восточному Кейпу — для семей, которым нужен буш без малярии.", "k49": "Крюгер", "k50": "Национальный парк Крюгер", "k51": "Самостоятельно за рулём или на сафари с гидом — по одному из самых известных парков Африки: бескрайние пейзажи, масса животных и настоящие утра в буше.", "k52": "Частные заповедники", "k53": "Частные заповедники", "k54": "Более камерный буш у границ Крюгера и не только: меньше машин, гибкие выезды и ощущение «только мы и дикая природа».", "k55": "Без малярии", "k56": "Сафари в Восточном Кейпе", "k57": "«Большая пятёрка» без малярии в Восточном Кейпе — идеально, если хочется дикой природы без разговоров о профилактике.", "k58": "Автопутешествие", "k59": "Гарден-Рут + сафари", "k60": "Прибрежные леса, лагуны и горные перевалы: совместите поездку по Гарден-Рут с остановкой в буше — контрастно и без спешки.", "k61": "Экскурсии", "k62": "Дни в Кейптауне, от которых не заскучаешь", "k63": "Сгруппировали по настроению: городские краски, элегантность винного края, океанский адреналин и горные приключения.", "k64": "Город · улицы · гавань", "k65": "Неон Кейптауна и краски Бо-Каапа", "k66": "Кварталы, афиши, огни гавани — город как игровая площадка, а не список галочек.", "k67": "Город", "k68": "Кейптаун и Бо-Каап", "k69": "Прогулки по кварталам с контекстом: краски и наследие Бо-Каапа, смотровые площадки и истории, которые рассказывают сами местные.", "k70": "Гавань", "k71": "V&amp;A Waterfront", "k72": "Энергия живого порта, магазины, морской воздух и удобная точка старта для прогулок по гавани или бокала на закате после дня в горах.", "k73": "История", "k74": "Остров Роббен", "k75": "Паром через Столовую бухту к месту, которое изменило современную ЮАР. Экскурсии, где история важнее зрелища.", "k76": "Винные маршруты", "k77": "Констанция и винные земли", "k78": "Впечатления важнее бесконечных дегустаций: прогулки по поместьям, гастрономические пары, сады и виды на виноградники.", "k79": "Впечатления", "k80": "Констанция и винные земли", "k81": "Больше, чем дегустации: прогулки по поместьям, гастрономические пары, сады и виды на виноградники в Констанции и по всему винному Кейпу.", "k82": "Неспешные дни", "k83": "Время в поместье, а не только бокалы", "k84": "Пикники на лужайках, истории из погребов и свет золотого часа — впечатления для любознательных, а не бар-хоппинг с видом.", "k85": "Океан · киты · глубокий синий", "k86": "Солёный ветер и морские истории", "k87": "Скалы полуострова, пингвины, киты Херманюса и адреналин дайвинга в клетке — когда океан даёт добро.", "k88": "Полуостров", "k89": "Капский полуостров и Кейп-Пойнт", "k90": "Драматичный Чапманс-Пик, скалы Кейп-Пойнта и остановка у африканских пингвинов на пляже Боулдерс — целый день, который оправдывает каждое фото.", "k91": "Сезонное", "k92": "Наблюдение за китами · Херманюс", "k93": "В сезон южные гладкие киты проплывают вдоль побережья залива Уокер — смотрим со скальных троп или с лодки, если погода не капризничает.", "k94": "Адреналин", "k95": "Дайвинг в клетке с акулами", "k96": "Погружения в клетке с лодки у побережья Кейпа — для тех, кто хочет безопасно и близко взглянуть на океанских хищников.", "k97": "Приключения · тропы · небо", "k98": "Выше в горы. Короче полёт. Падать — с улыбкой.", "k99": "Горная погодная рулетка, старты с Сигнал-Хилла и сессии на атлантических дюнах — для тех, кому не сидится на месте.", "k100": "Символ", "k101": "Столовая гора", "k102": "Канатная дорога или пешком — как позволит погода. С вершины город выглядит игрушечным между горой и морем.", "k103": "Активно", "k104": "Дни в походах", "k105": "Походы по Столовой горе и окрестностям — ланч с собой по желанию, право похвастаться включено.", "k106": "Небо и песок", "k107": "Параплан · сэндборд", "k108": "Полёты на параплане с Сигнал-Хилла, когда позволяет ветер, и сэндборд на атлантических дюнах — ради эффектных падений.", "k109": "Полезные мелочи", "k110": "Визы, перевод и где оставить вещи", "k111": "Негламурные мелочи, которые делают поездку проще. Описываем честно, без юридических обещаний.", "k112": "Визовая поддержка", "k113": "Подскажем типичные требования для туристов и списки документов для ЮАР. Мы помогаем подготовиться, но окончательное решение всегда за властями.", "k114": "Услуги перевода", "k115": "Расшифровать меню, уточнить бронь или помочь с разговором? Переводим и сопровождаем на английском, испанском и русском.", "k116": "Хранение багажа и снаряжения", "k117": "Хотите путешествовать налегке между побережьем и сафари? Спросите о краткосрочном хранении багажа и снаряжения, пока вы исследуете.", "k118": "Три шага. Без воды.", "k119": "Никаких загадочных порталов. Вы рассказываете, чего хотите, мы всё собираем, а вам остаётся самое весёлое.", "k120": "Расскажите, чего хотите", "k121": "Даты, настроение, обязательная программа, языки, уровень комфорта. Достаточно наброска — остальное уточним.", "k122": "Мы собираем план", "k123": "Варианты маршрута с понятным составом, таймингом и практичными заметками. Правим, пока не станет идеально.", "k124": "Приезжайте — и вперёд", "k125": "Гиды, логистика и местные знания на месте. С вас — любопытство, с нас — кейптаунский драйв.", "k126": "Честные причины, никаких выдуманных наград", "k127": "Мы небольшая кейптаунская команда, которая делает что-то дерзкое. Вот на что можно рассчитывать на самом деле.", "k128": "Местный гид из Кейптауна", "k129": "Планирует и часто ведёт Юли, которая живёт этим городом: утра в Си-Пойнте, приложения с горной погодой — всё по-настоящему.", "k130": "Многоязычно с самого начала", "k131": "Частные экскурсии на английском, испанском и русском — чтобы никому не приходилось просто кивать и улыбаться на самом интересном.", "k132": "Впечатления вместо туризма по галочкам", "k133": "Мы делаем ставку на сафари, природу, городские кварталы и океан — а не на бесконечные очереди в залах ради галочки.", "k134": "Связаны с Howzit", "k135": "Коворкинг Howzit в Си-Пойнте — это местная база, связи с сообществом и место, где можно приземлиться между приключениями.", "k136": "Контакты", "k137": "Готовы, когда готовы вы", "k138": "Пришлите набросок идеи — или просто поздоровайтесь. Мы ответим из Кейпа и подскажем дальнейшие шаги.", "k139": "Имя", "k140": "Email", "k141": "Примерные даты / направление", "k142": "Предпочитаемый язык", "k143": "Чего хочется?", "k144": "Отправить запрос", "k145": "WhatsApp · +27 71 034 7336", "k146": "Спасибо! Сейчас откроется почтовая программа с письмом на <strong>hola.howzit@gmail.com</strong>. Если этого не произошло, напишите нам туда напрямую.", "k147": "Хотите побыстрее?", "k148": "WhatsApp — обычно самый быстрый способ уточнить время или решить что-то в последний момент из-за капской погоды.", "k149": "Email: hola.howzit@gmail.com", "k150": "Мы в Си-Пойнте, Кейптаун", "k151": "Гиды: EN · ES · RU", "k152": "Пилотная версия сайта · Приключения из Кейптауна — и дальше.", "k153": "Написать нам", "k154": "Английский", "k155": "Испанский", "k156": "Русский", "k157": "Другой / смешанный", "k158": "Как к вам обращаться?", "k159": "you@example.com", "k160": "напр. март · Кейптаун + сафари", "k161": "Сафари? День на полуострове? Параплан? Опишите настроение.", "k162": "Now-Now Adventures — на главную", "k163": "Открыть меню", "k164": "Основное меню", "k165": "Главный экран", "k166": "Кейптаун с высоты: Столовая гора, Львиная Голова и Сигнал-Хилл", "k167": "Континенты", "k168": "Языки гидов", "k169": "Назад", "k170": "Вперёд", "k171": "Городские экскурсии", "k172": "Назад", "k173": "Вперёд", "k174": "Океанские экскурсии", "k175": "Написать в WhatsApp", "k176": "Яркие дома на улице Уэйл-стрит в Бо-Каапе, Кейптаун, на фоне Сигнал-Хилла", "k177": "Слон пьёт у водопоя в национальном парке Крюгер", "k178": "Слониха со слонёнком переходят дорогу в парке Крюгер", "k179": "Гости на открытом сафари-джипе в частном заповеднике Саби-Саби", "k180": "Стадо слонов у водопоя в национальном парке Аддо, Восточный Кейп", "k181": "Яхта проходит между скалами Найсна-Хедс на Гарден-Рут", "k182": "Разноцветные дома Бо-Каапа на фоне Столовой горы", "k183": "Лодки в гавани V&amp;A Waterfront на фоне Столовой горы", "k184": "Волны у берега острова Роббен, за бухтой — Столовая гора", "k185": "Капско-голландская усадьба винодельни Гроот-Констанция", "k186": "Виноградники Гроот-Констанции у подножия Констанцияберга", "k187": "Африканский пингвин на пляже Боулдерс у Саймонстауна", "k188": "Южный гладкий кит выпрыгивает из воды в заливе Уокер у Херманюса", "k189": "Лодка для дайвинга в клетке с акулами у Гансбая", "k190": "Столовая гора через залив с пляжа Блаубергстранд", "k191": "Туристы отдыхают на вершине Львиной Головы над Си-Пойнтом", "k192": "Парапланерист парит над Львиной Головой, вдали — Атлантика", "k193": "Язык"}, "es": {"k0": "Ir al contenido", "k1": "Destinos", "k2": "Sudáfrica", "k3": "Cómo funciona", "k4": "Por qué nosotros", "k5": "Planear un viaje", "k6": "<span aria-hidden=\"true\" class=\"dot\"></span> Ciudad del Cabo · Experiencias · Guías privados", "k7": "¿Aventura? <em>Now-now.</em>", "k8": "<strong>(Bueno, ya mismo.)</strong> Viajes con chispa para quienes buscan lo auténtico: safaris, aire de montaña, pingüinos, olas e historias, y no otra vuelta aburrida por un museo polvoriento.", "k9": "Descubre Sudáfrica", "k10": "Cuéntanos qué te apetece", "k11": "En Sudáfrica, «now-now» quiere decir «dentro de un ratito… más o menos». Nosotros respondemos now-now de verdad: casi siempre el mismo día.", "k12": "Mañanas de safari<i>·</i>Color en Bo-Kaap<i>·</i>La ruleta del clima en la Montaña de la Mesa<i>·</i>Acantilados de Cape Point<i>·</i>Citas con pingüinos<i>·</i>Paseos por los viñedos<i>·</i>El drama de la temporada de ballenas<i>·</i>Pulsaciones en la jaula de tiburones<i>·</i>Despegues desde Signal Hill<i>·</i>Caídas en sandboard<i>·</i>Guardería de maletas<i>·</i>Aventura now-now<i>·</i>", "k13": "¿Adónde ahora?", "k14": "Elige un rincón del mapa", "k15": "Explora por regiones. Esta versión piloto enciende África, y en concreto Sudáfrica. El resto del mundo está calentando motores (a nosotros también nos puede la impaciencia).", "k16": "África", "k17": "Disponible · Sudáfrica", "k18": "Europa", "k19": "Muy pronto", "k20": "Asia", "k21": "América", "k22": "Oriente Medio", "k23": "Sudáfrica <span class=\"badge-live\">Disponible</span>", "k24": "Namibia <span class=\"badge-soon\">Pronto</span>", "k25": "Botsuana <span class=\"badge-soon\">Pronto</span>", "k26": "Mozambique <span class=\"badge-soon\">Pronto</span>", "k27": "Kenia <span class=\"badge-soon\">Pronto</span>", "k28": "Tanzania <span class=\"badge-soon\">Pronto</span>", "k29": "Europa: muy pronto", "k30": "Estamos bocetando itinerarios con mucha chispa. Sudáfrica ya está lista cuando tú lo estés.", "k31": "Asia: muy pronto", "k32": "Atento a este espacio. De momento, el Cabo te llama.", "k33": "América: muy pronto", "k34": "Los grandes paisajes ya están en la hoja de ruta. Mientras tanto, empieza por África.", "k35": "Oriente Medio: muy pronto", "k36": "Se está cociendo drama en el desierto. Mientras tanto, Sudáfrica ya está abierta.", "k37": "Primero, las experiencias. Los museos, opcionales.", "k38": "Pensado con ojo de guía local de Ciudad del Cabo: safaris, días de ciudad, emociones en el océano y la logística que hace que todo fluya.", "k39": "Lo lleva alguien que vive aquí de verdad", "k40": "Yuli (Yu Ladysh) es guía turística en Ciudad del Cabo y copropietaria de Howzit, un coworking en Sea Point. Organiza viajes para aventureros que prefieren emociones a relleno, en inglés, español o ruso.", "k41": "<i>🇬🇧</i> Inglés", "k42": "<i>🇪🇸</i> Español", "k43": "<i>🇷🇺</i> Ruso", "k44": "Guías privados, a tu ritmo", "k45": "Excursiones de un día o rutas de varios días. Lo diseñamos según lo que quieras sentir —salvaje, curioso, salado, un poco sin aliento— y nos ocupamos de toda la logística.", "k46": "Safaris", "k47": "Energía Big Five (y opciones sin malaria)", "k48": "Desde los clásicos de Kruger hasta reservas privadas más tranquilas y una ruta por el Cabo Oriental ideal para familias que prefieren sabana sin malaria.", "k49": "Kruger", "k50": "Parque Nacional Kruger", "k51": "A tu aire o con safaris guiados por uno de los parques más famosos de África: paisajes inmensos, fauna abundante y auténticas mañanas en la sabana.", "k52": "Reservas privadas", "k53": "Reservas privadas de caza fotográfica", "k54": "Sabana más íntima junto a Kruger y más allá: menos vehículos, salidas flexibles y esa sensación de «solo nosotros y la naturaleza».", "k55": "Sin malaria", "k56": "Safari en el Cabo Oriental", "k57": "Big Five sin malaria en el Cabo Oriental: ideal si quieres fauna salvaje sin la charla sobre profilaxis.", "k58": "Road trip", "k59": "Ruta Jardín + extras de safari", "k60": "Bosques costeros, lagunas y puertos de montaña: combina la Ruta Jardín con una parada en la sabana, con contraste y sin prisas.", "k61": "Excursiones", "k62": "Días en Ciudad del Cabo que no te aburren ni un segundo", "k63": "Agrupado por vibra: color urbano, elegancia vinícola, adrenalina oceánica y montaña con carácter.", "k64": "Ciudad · calle · puerto", "k65": "Neón de Ciudad del Cabo y color de Bo-Kaap", "k66": "Barrios, carteles, luces del puerto: la ciudad como patio de juegos, no como lista de tareas.", "k67": "Ciudad", "k68": "Ciudad del Cabo y Bo-Kaap", "k69": "Paseos por los barrios con contexto: el color y la herencia de Bo-Kaap, miradores urbanos y las historias que cuentan los locales.", "k70": "Puerto", "k71": "V&amp;A Waterfront", "k72": "Energía de puerto en activo, tiendas, aire marino y el punto de partida perfecto para un paseo en barco o una copa al atardecer tras un día de montaña.", "k73": "Historia", "k74": "Robben Island", "k75": "Un ferri por la bahía de la Mesa hasta el lugar que marcó la Sudáfrica moderna, con visitas guiadas donde la historia pesa más que el espectáculo.", "k76": "Rutas del vino", "k77": "Constantia y los Winelands", "k78": "Experiencias más allá de las catas sin fin: paseos por fincas, maridajes, jardines y vistas a los viñedos.", "k79": "Experiencias", "k80": "Constantia y Winelands", "k81": "Mucho más que catas: paseos por fincas, maridajes, jardines y vistas a los viñedos en Constantia y en los Cape Winelands.", "k82": "Días sin prisa", "k83": "Tiempo en la finca, no solo copas", "k84": "Piensa en pícnics sobre el césped, historias de bodega y luz de hora dorada: experiencias para viajeros curiosos, no una ruta de bares con vistas.", "k85": "Océano · ballenas · azul profundo", "k86": "Aire salado e historias de mar", "k87": "Acantilados de la península, pingüinos, ballenas en Hermanus y la emoción de la jaula de tiburones cuando el océano lo permite.", "k88": "Península", "k89": "Península del Cabo y Cape Point", "k90": "El drama de Chapman's Peak, los acantilados de Cape Point y una parada con los pingüinos africanos en Boulders: un día completo que se gana cada foto.", "k91": "De temporada", "k92": "Avistamiento de ballenas · Hermanus", "k93": "En temporada, las ballenas francas australes recorren la costa de Walker Bay: senderos sobre los acantilados o salidas en barco si el tiempo acompaña.", "k94": "Adrenalina", "k95": "Buceo en jaula con tiburones", "k96": "Inmersiones en jaula desde barco en la costa del Cabo para quienes quieren ver de cerca, y con seguridad, a los depredadores del océano.", "k97": "Aventura · senderos · cielo", "k98": "Sube alto. Vuela un rato. Cae con estilo.", "k99": "Ruleta meteorológica en la montaña, despegues desde Signal Hill y sesiones en las dunas del Atlántico, para cuando quedarse quieto no es opción.", "k100": "Icono", "k101": "Montaña de la Mesa", "k102": "Teleférico o a pie, según el tiempo: vistas desde la cima que convierten la ciudad en una maqueta entre la montaña y el mar.", "k103": "Activo", "k104": "Días de senderismo", "k105": "Jornadas de sendero por la Montaña de la Mesa y alrededores: el pícnic es opcional; el derecho a presumir, incluido.", "k106": "Cielo y arena", "k107": "Parapente · sandboard", "k108": "Parapente desde Signal Hill cuando el viento lo permite y sandboard en las dunas atlánticas por el placer de las caídas épicas.", "k109": "Extras prácticos", "k110": "Visados, idiomas y dónde dejar tus cosas", "k111": "Lo poco glamuroso que hace el viaje más fácil, explicado con claridad y sin promesas legales.", "k112": "Ayuda con visados", "k113": "Orientación sobre los requisitos habituales para visitantes y listas de documentos para Sudáfrica. Te ayudamos a prepararte; la decisión final siempre es de las autoridades.", "k114": "Servicios de traducción", "k115": "¿Hay que descifrar una carta, aclarar una reserva o tender un puente en una conversación? Traducción y guía en inglés, español y ruso.", "k116": "Consigna de equipaje y equipo", "k117": "¿Quieres viajar ligero entre la costa y el safari? Pregunta por la consigna temporal de maletas y material outdoor mientras exploras.", "k118": "Tres pasos. Cero paja.", "k119": "Sin portales misteriosos. Nos cuentas qué quieres, le damos forma y tú te quedas con la parte divertida.", "k120": "Cuéntanos qué buscas", "k121": "Fechas, ambiente, imprescindibles, idiomas, nivel de comodidad. Con un borrador basta; el resto lo preguntamos nosotros.", "k122": "Diseñamos el plan", "k123": "Opciones de itinerario con lo que incluye, horarios y notas prácticas. Lo ajustamos hasta que encaje.", "k124": "Llega y no pares", "k125": "Guías, logística y conocimiento local sobre el terreno. Tú pones la curiosidad; nosotros, el toque de Ciudad del Cabo.", "k126": "Razones honestas, sin premios inventados", "k127": "Somos un equipo pequeño de Ciudad del Cabo creando algo con descaro. Esto es con lo que puedes contar de verdad.", "k128": "Guía local de Ciudad del Cabo", "k129": "Lo planea y a menudo lo guía Yuli, que vive la ciudad a fondo: mañanas en Sea Point, apps del tiempo de montaña y todo lo demás.", "k130": "Multilingüe de serie", "k131": "Guías privados en inglés, español y ruso, para que nadie tenga que sonreír y asentir sin entender lo mejor.", "k132": "Experiencias, no turismo de checklist", "k133": "Apostamos por el safari, el aire libre, los barrios y el océano, no por colas interminables bajo techo porque sí.", "k134": "Conectados con Howzit", "k135": "Ser copropietarios del coworking Howzit en Sea Point significa base local, comunidad y un lugar donde aterrizar entre aventuras.", "k136": "Contacto", "k137": "Listos cuando tú lo estés", "k138": "Mándanos una idea aproximada o simplemente saluda. Te responderemos desde el Cabo con los siguientes pasos.", "k139": "Nombre", "k140": "Email", "k141": "Fechas aproximadas / destino", "k142": "Idioma preferido", "k143": "¿Qué te apetece?", "k144": "Enviar consulta", "k145": "WhatsApp · +27 71 034 7336", "k146": "¡Gracias! Tu programa de correo debería abrir un mensaje para <strong>hola.howzit@gmail.com</strong>. Si no se abre, escríbenos directamente allí.", "k147": "¿Prefieres algo rápido?", "k148": "WhatsApp suele ser lo más rápido para dudas de horarios y decisiones de última hora por el tiempo del Cabo.", "k149": "Email: hola.howzit@gmail.com", "k150": "Estamos en Sea Point, Ciudad del Cabo", "k151": "Guías: EN · ES · RU", "k152": "Sitio piloto · Viajes de aventura desde Ciudad del Cabo hacia el mundo.", "k153": "Consultar", "k154": "Inglés", "k155": "Español", "k156": "Ruso", "k157": "Otro / mezcla", "k158": "¿Cómo te llamamos?", "k159": "tu@ejemplo.com", "k160": "p. ej. marzo · Ciudad del Cabo + safari", "k161": "¿Safari? ¿Un día en la península? ¿Parapente? Cuéntanos qué buscas.", "k162": "Now-Now Adventures — inicio", "k163": "Abrir menú", "k164": "Menú principal", "k165": "Portada", "k166": "Vista aérea de Ciudad del Cabo con la Montaña de la Mesa, Lion’s Head y Signal Hill", "k167": "Continentes", "k168": "Idiomas de los guías", "k169": "Anterior", "k170": "Siguiente", "k171": "Excursiones urbanas", "k172": "Anterior", "k173": "Siguiente", "k174": "Excursiones oceánicas", "k175": "Escribir por WhatsApp", "k176": "Casas de colores vivos en Wale Street, Bo-Kaap (Ciudad del Cabo), con Signal Hill detrás", "k177": "Elefante bebiendo en una charca del Parque Nacional Kruger", "k178": "Elefanta y su cría cruzando una pista en el Parque Nacional Kruger", "k179": "Visitantes en un vehículo de safari abierto en la reserva privada Sabi Sabi", "k180": "Manada de elefantes en una charca del Parque Nacional de Elefantes de Addo, Cabo Oriental", "k181": "Velero cruzando los Knysna Heads en la Ruta Jardín", "k182": "Casas de colores de Bo-Kaap con la Montaña de la Mesa al fondo", "k183": "Barcos en el puerto del V&amp;A Waterfront con la Montaña de la Mesa detrás", "k184": "Olas rompiendo en la costa de Robben Island, con la Montaña de la Mesa al otro lado de la bahía", "k185": "La casa señorial de estilo holandés del Cabo en la finca vinícola Groot Constantia", "k186": "Viñedos de Groot Constantia bajo el Constantiaberg", "k187": "Pingüino africano en Boulders Beach, cerca de Simon’s Town", "k188": "Ballena franca austral saltando en Walker Bay, frente a Hermanus", "k189": "Barco de buceo en jaula con tiburones frente a Gansbaai", "k190": "La Montaña de la Mesa vista desde Bloubergstrand, al otro lado del agua", "k191": "Senderistas descansando en la cima de Lion’s Head, sobre Sea Point", "k192": "Parapente sobrevolando Lion’s Head con el Atlántico de fondo", "k193": "Idioma"}}, "title": {"en": "Now-Now Adventures — Cape Town adventures, sooner than you think", "ru": "Now-Now Adventures — приключения в Кейптауне раньше, чем вы думаете", "es": "Now-Now Adventures — aventuras en Ciudad del Cabo antes de lo que crees"}, "desc": {"en": "Now-Now Adventures — cheeky, experience-led adventures in South Africa and beyond. Safari, Cape Town excursions, private guides in English, Spanish and Russian.", "ru": "Now-Now Adventures — дерзкие путешествия по ЮАР и не только: сафари, экскурсии по Кейптауну, частные гиды на английском, испанском и русском.", "es": "Now-Now Adventures — viajes de aventura con chispa por Sudáfrica y más allá: safaris, excursiones en Ciudad del Cabo y guías privados en inglés, español y ruso."}};
-const I18N_JS={"en": {"fill": "Please fill in name, email and a short message.", "subject": "Trip enquiry — Now-Now Adventures", "name": "Name", "email": "Email", "dates": "Dates / destination", "lang": "Language", "close": "Close menu", "open": "Open menu", "wa": "Hi Yuli! I found Now-Now Adventures and I'd love to plan a trip."}, "ru": {"fill": "Пожалуйста, укажите имя, email и пару слов о поездке.", "subject": "Запрос на поездку — Now-Now Adventures", "name": "Имя", "email": "Email", "dates": "Даты / направление", "lang": "Язык", "close": "Закрыть меню", "open": "Открыть меню", "wa": "Привет, Юли! Нашёл(ла) Now-Now Adventures и хочу спланировать поездку."}, "es": {"fill": "Por favor, completa tu nombre, email y un mensaje breve.", "subject": "Consulta de viaje — Now-Now Adventures", "name": "Nombre", "email": "Email", "dates": "Fechas / destino", "lang": "Idioma", "close": "Cerrar menú", "open": "Abrir menú", "wa": "¡Hola, Yuli! Encontré Now-Now Adventures y me encantaría planear un viaje."}};
-let curLang='en';
-function setLang(l,save){
-  if(!I18N.t[l]) l='en'; curLang=l;
-  const t=I18N.t[l];
-  document.documentElement.lang=l;
-  document.title=I18N.title[l];
-  const md=document.querySelector('meta[name=description]'); if(md) md.setAttribute('content',I18N.desc[l]);
-  document.querySelectorAll('[data-i18n]').forEach(e=>{const v=t[e.dataset.i18n]; if(v!=null) e.innerHTML=v;});
-  document.querySelectorAll('[data-i18n-ph]').forEach(e=>{const v=t[e.dataset.i18nPh]; if(v!=null) e.placeholder=v;});
-  document.querySelectorAll('[data-i18n-al]').forEach(e=>{const v=t[e.dataset.i18nAl]; if(v!=null) e.setAttribute('aria-label',v.replace(/&amp;/g,'&'));});
-  document.querySelectorAll('[data-i18n-alt]').forEach(e=>{const v=t[e.dataset.i18nAlt]; if(v!=null) e.alt=v.replace(/&amp;/g,'&');});
-  document.querySelectorAll('.lang-switch button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false'));
-  const wa=document.querySelector('a.wa'); if(wa) wa.href='https://wa.me/27710347336?text='+encodeURIComponent(I18N_JS[l].wa);
-  const th=document.getElementById('thanks'); if(th) th.classList.remove('show');
-  if(save){try{localStorage.setItem('nn-lang',l)}catch(e){}}
-  if(save){const u=new URL(location.href); if(u.searchParams.has('lang')){u.searchParams.set('lang',l);history.replaceState(null,'',u)}}
-}
-(function(){
-  let l='en';
-  const q=new URLSearchParams(location.search).get('lang');
-  if(q&&I18N.t[q.toLowerCase()]) l=q.toLowerCase();
-  else{try{const s=localStorage.getItem('nn-lang'); if(s&&I18N.t[s]) l=s;}catch(e){}}
-  if(q&&I18N.t[l]){try{localStorage.setItem('nn-lang',l)}catch(e){}}
-  setLang(l,false);
-  document.querySelectorAll('.lang-switch button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang,true)));
+var T={
+en:{skip:"Skip to content",nav_services:"Services",nav_ai:"For travel businesses",nav_cta:"Get your quote",eyebrow:"Tailor-made travel · Private guides",h1:"Adventure? <em>Now-now.</em>",lead:"We plan it, book it and guide it. You just go.",cta_plan:"Plan my trip",cta_services:"See services",chip1:"Guides in English · Español · Русский",chip2:"Personal reply, usually the same day",svc_h:"How can we help?",svc_p:"Pick a service. We'll come back with a plan and a quote.",s1t:"Full package adventure",s1d:"Everything handled, from first idea to last sunset.",s2t:"Professional tour guides",s2d:"Private guides in English, Spanish and Russian.",s3t:"Your itinerary design",s3d:"A day-by-day plan built around you.",s4t:"Bookings",s4d:"Activities, restaurants, flights and more, booked for you.",quote:"Get your quote",enquire:"Enquire",st1:"Tell us what you want",st2:"Get your plan and quote",st3:"Go and enjoy",ai_tag:"For travel businesses",ai_h:"AI that works the night shift",ai_p:"AI agents for DMCs, travel agents, tour operators and lodges.",a1t:"No enquiry waits",a1d:"Agents read late-night requests and draft the proposal in your client's language by morning.",a2t:"You stay in charge",a2d:"Nothing is sent, booked or paid without your yes: one tap on your phone.",a3t:"Back office handled",a3d:"Supplier invoices filed by trip and proofs of payment sent back. No chasing.",a4t:"Your knowledge, kept",a4d:"Past itineraries, rates and contracts in one memory, even when people move on.",ai_cta:"Book a demo",ai_cta2:"Ask a question",c_h:"Ready when you are",c_p:"Send an enquiry or message us on WhatsApp.",c_form:"Send an enquiry",c_wa:"WhatsApp us",wa_al:"Chat with us on WhatsApp",close:"Close",f_h:"Tell us your plans",f_service:"I'm interested in",o_ai:"AI for my travel business",f_name:"Name",f_email:"Email",f_phone:"WhatsApp or phone (optional)",f_msg:"Dates, group size, what you'd love",f_lang:"Reply in",f_send:"Send enquiry",sending:"Sending…",ok:"Thank you! We'll reply soon.",err:"Sorry, that didn't go through. Please message us on WhatsApp.",invalid:"Please fill in your name, a valid email and a short message.",wa_txt:"Hi Now-Now Adventures! I'd like to plan a trip."},
+ru:{skip:"Перейти к содержанию",nav_services:"Услуги",nav_ai:"Для турбизнеса",nav_cta:"Узнать цену",eyebrow:"Индивидуальные путешествия · Частные гиды",h1:"Приключения? <em>Now-now.</em>",lead:"Спланируем, забронируем и проведём. Вам остаётся только ехать.",cta_plan:"Спланировать поездку",cta_services:"Наши услуги",chip1:"Гиды: English · Español · Русский",chip2:"Личный ответ, обычно в тот же день",svc_h:"Чем мы можем помочь?",svc_p:"Выберите услугу, и мы пришлём план и расчёт.",s1t:"Путешествие под ключ",s1d:"Берём на себя всё, от идеи до последнего заката.",s2t:"Профессиональные гиды",s2d:"Частные гиды на русском, испанском и английском.",s3t:"Дизайн маршрута",s3d:"Программа по дням, созданная под вас.",s4t:"Бронирования",s4d:"Активности, рестораны, перелёты и другое забронируем за вас.",quote:"Узнать цену",enquire:"Оставить заявку",st1:"Расскажите, чего хотите",st2:"Получите план и расчёт",st3:"Отправляйтесь",ai_tag:"Для турбизнеса",ai_h:"ИИ, который работает в ночную смену",ai_p:"ИИ-агенты для DMC, турагентств, туроператоров и лоджей.",a1t:"Ни один запрос не ждёт",a1d:"Агенты разбирают ночные запросы и к утру готовят предложение на языке клиента.",a2t:"Решаете вы",a2d:"Ничего не отправляется, не бронируется и не оплачивается без вашего «да» в телефоне.",a3t:"Бэк-офис под контролем",a3d:"Счета поставщиков разложены по поездкам, подтверждения оплаты отправлены. Без напоминаний.",a4t:"Ваши знания сохранены",a4d:"Прошлые маршруты, тарифы и контракты в одной памяти, даже если сотрудник ушёл.",ai_cta:"Записаться на демо",ai_cta2:"Задать вопрос",c_h:"Начнём?",c_p:"Оставьте заявку или напишите нам в WhatsApp.",c_form:"Оставить заявку",c_wa:"Написать в WhatsApp",wa_al:"Написать нам в WhatsApp",close:"Закрыть",f_h:"Расскажите о своих планах",f_service:"Что вас интересует",o_ai:"ИИ для моего турбизнеса",f_name:"Имя",f_email:"Email",f_phone:"WhatsApp или телефон (необязательно)",f_msg:"Даты, количество гостей, пожелания",f_lang:"Язык ответа",f_send:"Отправить заявку",sending:"Отправляем…",ok:"Спасибо! Мы скоро ответим.",err:"Не удалось отправить. Напишите нам, пожалуйста, в WhatsApp.",invalid:"Укажите имя, корректный email и пару слов о поездке.",wa_txt:"Здравствуйте! Хочу спланировать поездку с Now-Now Adventures."},
+es:{skip:"Ir al contenido",nav_services:"Servicios",nav_ai:"Para empresas de viajes",nav_cta:"Pide tu presupuesto",eyebrow:"Viajes a medida · Guías privados",h1:"¿Aventura? <em>Now-now.</em>",lead:"Lo planificamos, lo reservamos y te guiamos. Tú solo viaja.",cta_plan:"Planear mi viaje",cta_services:"Ver servicios",chip1:"Guías en English · Español · Русский",chip2:"Respuesta personal, normalmente el mismo día",svc_h:"¿Cómo podemos ayudarte?",svc_p:"Elige un servicio y te enviamos un plan y un presupuesto.",s1t:"Aventura todo incluido",s1d:"Nos ocupamos de todo, de la primera idea al último atardecer.",s2t:"Guías profesionales",s2d:"Guías privados en español, inglés y ruso.",s3t:"Diseño de tu itinerario",s3d:"Un plan día a día hecho a tu medida.",s4t:"Reservas",s4d:"Actividades, restaurantes, vuelos y más, reservados por ti.",quote:"Pide tu presupuesto",enquire:"Consultar",st1:"Cuéntanos qué quieres",st2:"Recibe tu plan y presupuesto",st3:"Viaja y disfruta",ai_tag:"Para empresas de viajes",ai_h:"IA que trabaja el turno de noche",ai_p:"Agentes de IA para DMC, agencias de viajes, turoperadores y lodges.",a1t:"Ninguna consulta espera",a1d:"Los agentes leen las solicitudes nocturnas y por la mañana tienen la propuesta en el idioma del cliente.",a2t:"Tú decides",a2d:"Nada se envía, reserva ni paga sin tu sí: un toque en el móvil.",a3t:"Back office resuelto",a3d:"Facturas de proveedores archivadas por viaje y comprobantes de pago enviados. Sin perseguir a nadie.",a4t:"Tu conocimiento, guardado",a4d:"Itinerarios, tarifas y contratos en una sola memoria, aunque cambie el equipo.",ai_cta:"Reservar una demo",ai_cta2:"Hacer una pregunta",c_h:"¿Empezamos?",c_p:"Envía una consulta o escríbenos por WhatsApp.",c_form:"Enviar consulta",c_wa:"Escríbenos por WhatsApp",wa_al:"Escríbenos por WhatsApp",close:"Cerrar",f_h:"Cuéntanos tus planes",f_service:"Me interesa",o_ai:"IA para mi empresa de viajes",f_name:"Nombre",f_email:"Email",f_phone:"WhatsApp o teléfono (opcional)",f_msg:"Fechas, número de personas, lo que te encantaría",f_lang:"Responder en",f_send:"Enviar consulta",sending:"Enviando…",ok:"¡Gracias! Te responderemos pronto.",err:"No se pudo enviar. Escríbenos por WhatsApp, por favor.",invalid:"Indica tu nombre, un email válido y un breve mensaje.",wa_txt:"¡Hola Now-Now Adventures! Quiero planear un viaje."}};
+var WA="https://wa.me/27710347336?text=",lang="en";
+function setLang(l){if(!T[l])l="en";lang=l;var d=T[l];document.documentElement.lang=l;
+ document.querySelectorAll("[data-t]").forEach(function(el){var k=el.getAttribute("data-t");if(d[k]==null)return;if(el.hasAttribute("data-html"))el.innerHTML=d[k];else el.textContent=d[k];});
+ document.querySelectorAll("[data-t-al]").forEach(function(el){var k=el.getAttribute("data-t-al");if(d[k])el.setAttribute("aria-label",d[k]);});
+ document.querySelectorAll(".wa-link").forEach(function(a){a.href=WA+encodeURIComponent(d.wa_txt);});
+ document.querySelectorAll(".langs button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.lang===l?"true":"false");});
+ var rl=document.querySelector("[name=reply_language]");if(rl)rl.selectedIndex={en:0,es:1,ru:2}[l];
+ try{localStorage.setItem("nn-lang",l)}catch(e){}}
+document.querySelectorAll(".langs button").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.lang)})});
+var saved=null;try{saved=localStorage.getItem("nn-lang")}catch(e){}
+var nav=(navigator.language||"en").slice(0,2);setLang(saved||(T[nav]?nav:"en"));
+var dlg=document.getElementById("enq"),form=document.getElementById("enqForm"),st=document.getElementById("fStatus"),sel=document.getElementById("fService");
+if(!dlg.showModal)return; /* old browsers: links fall back to #contact */
+document.addEventListener("click",function(e){var a=e.target.closest("[data-open]");if(!a)return;e.preventDefault();var s=a.getAttribute("data-open");if(s)sel.value=s;st.textContent="";st.className="status";dlg.showModal();var f=form.querySelector("[name=name]");setTimeout(function(){(s?f:sel).focus()},30);});
+dlg.addEventListener("click",function(e){if(e.target===dlg||e.target.closest("[data-close]"))dlg.close();});
+var to=["hola","howzit"].join(".")+String.fromCharCode(64)+["gmail","com"].join(".");
+form.addEventListener("submit",function(e){e.preventDefault();var d=T[lang],fd=new FormData(form);
+ if(fd.get("_honey"))return;
+ if(!form.checkValidity()){st.className="status err";st.textContent=d.invalid;var bad=form.querySelector(":invalid");if(bad)bad.focus();return;}
+ var data={};fd.forEach(function(v,k){data[k]=v});data.service=sel.options[sel.selectedIndex].text+" ("+sel.value+")";data.site_language=lang;
+ data._subject="New enquiry: "+sel.options[sel.selectedIndex].text+" ("+data.name+")";data._template="table";data._replyto=data.email;
+ var btn=form.querySelector("[type=submit]");btn.disabled=true;st.className="status";st.textContent=d.sending;
+ fetch("https://formsubmit.co/ajax/"+to,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
+ .then(function(r){return r.json().catch(function(){return{}})}).then(function(j){
+   if(j&&(j.success===true||j.success==="true")){st.className="status ok";st.textContent=d.ok;form.reset();setLang(lang);}
+   else{throw new Error(j&&j.message||"fail")}})
+ .catch(function(){st.className="status err";st.innerHTML="";st.appendChild(document.createTextNode(d.err+" "));var a=document.createElement("a");a.href=WA+encodeURIComponent(d.wa_txt);a.target="_blank";a.rel="noopener";a.textContent="WhatsApp →";st.appendChild(a);})
+ .finally(function(){btn.disabled=false});});
 })();
 </script>
 </body>
