@@ -284,7 +284,7 @@ var dlg=document.getElementById("enq"),form=document.getElementById("enqForm"),s
 if(!dlg.showModal)return; /* old browsers: links fall back to #contact */
 document.addEventListener("click",function(e){var a=e.target.closest("[data-open]");if(!a)return;e.preventDefault();var s=a.getAttribute("data-open");if(s)sel.value=s;st.textContent="";st.className="status";dlg.showModal();var f=form.querySelector("[name=name]");setTimeout(function(){(s?f:sel).focus()},30);});
 dlg.addEventListener("click",function(e){if(e.target===dlg||e.target.closest("[data-close]"))dlg.close();});
-var to=["hola","howzit"].join(".")+String.fromCharCode(64)+["gmail","com"].join(".");
+var to="a4826d9ddcd0f38b33dd17860adb6c38";
 form.addEventListener("submit",function(e){e.preventDefault();var d=T[lang],fd=new FormData(form);
  if(fd.get("_honey"))return;
  if(!form.checkValidity()){st.className="status err";st.textContent=d.invalid;var bad=form.querySelector(":invalid");if(bad)bad.focus();return;}
