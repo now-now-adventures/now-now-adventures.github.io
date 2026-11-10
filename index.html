@@ -70,9 +70,9 @@ h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.1;margin:0}
 /* hero */
 .hero{position:relative;min-height:min(78vh,680px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
 .hero picture{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
-.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scale(1.04);transform-origin:50% 30%;animation:hero-zoom 26s ease-out forwards}
+.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%;transform:scale(1.04);transform-origin:60% 50%;animation:hero-zoom 26s ease-out forwards}
 @keyframes hero-zoom{from{transform:scale(1.08)}to{transform:scale(1.02)}}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,25,.1) 0%,rgba(10,15,25,.28) 42%,rgba(10,15,25,.62) 72%,rgba(10,15,25,.86) 100%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,25,.12) 0%,rgba(10,15,25,.22) 45%,rgba(10,15,25,.48) 72%,rgba(10,15,25,.78) 100%)}
 .hero .wrap{position:relative;z-index:1;padding-bottom:56px;padding-top:80px}
 .eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.92;margin:0 0 14px}
 .hero h1{font-size:clamp(2.6rem,7.5vw,5.2rem);letter-spacing:-.02em;max-width:12ch}
@@ -191,7 +191,7 @@ form .btn{width:100%}
   <source media="(max-width:800px)" type="image/webp" srcset="img/hero-m.webp">
   <source media="(max-width:800px)" type="image/jpeg" srcset="img/hero-m.jpg">
   <source type="image/webp" srcset="img/hero.webp">
-  <img src="img/hero.jpg" alt="Elephants walking through tall grass at sunset" width="1920" height="1440" fetchpriority="high">
+  <img src="img/hero.jpg" alt="Elephants walking through tall grass at sunset" width="1920" height="1152" fetchpriority="high">
  </picture>
  <div class="wrap">
   <p class="eyebrow" data-t="eyebrow">Tailor-made travel · Private guides</p>
