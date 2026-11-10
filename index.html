@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Now-Now Travel | Tailor-made adventures, private guides &amp; trip planning</title>
-<meta name="description" content="Full-package adventures, professional guides in English, Spanish and Russian, itinerary design and bookings. Plus AI agents for DMCs, travel agents, tour operators and lodges. Get your quote.">
+<meta name="description" content="Full-package adventures, professional guides in English, Spanish and Russian, itinerary design and bookings. Get your quote.">
 <link rel="canonical" href="https://now-now-adventures.github.io/">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#e8553d">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Now-Now Travel">
 <meta property="og:title" content="Now-Now Travel | Adventure? Now-now.">
@@ -24,174 +24,42 @@
 <meta name="twitter:title" content="Now-Now Travel | Adventure? Now-now.">
 <meta name="twitter:description" content="Full-package adventures, private guides, itinerary design and bookings.">
 <meta name="twitter:image" content="https://now-now-adventures.github.io/img/og.jpg">
-<link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="img/hero-m.webp" media="(max-width:800px)">
-<link rel="preload" as="image" href="img/hero.webp" media="(min-width:801px)">
+<link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="/img/hero-m.webp" media="(max-width:800px)">
+<link rel="preload" as="image" type="image/webp" href="/img/hero.webp" media="(min-width:801px)">
+<link rel="stylesheet" href="/css/site.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Now-Now Travel","url":"https://now-now-adventures.github.io/","logo":"https://now-now-adventures.github.io/favicon.svg","image":"https://now-now-adventures.github.io/img/og.jpg","description":"Tailor-made adventure travel: full-package trips, professional tour guides in English, Spanish and Russian, itinerary design and bookings of activities, restaurants and flights. AI agents for DMCs, travel agents, tour operators and lodges.","knowsLanguage":["en","es","ru"],"areaServed":"Worldwide","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Full package adventure"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Professional tour guides in English, Spanish and Russian"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Itinerary design"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Booking of activities, restaurants, flights and other services"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI agents for travel businesses"}}]}
+{"@context":"https://schema.org","@type":"Organization","name":"Now-Now Travel","url":"https://now-now-adventures.github.io/","logo":"https://now-now-adventures.github.io/favicon.svg","image":"https://now-now-adventures.github.io/img/og.jpg","description":"Tailor-made adventure travel: full-package trips, professional tour guides in English, Spanish and Russian, itinerary design and bookings of activities, restaurants and flights.","knowsLanguage":["en","es","ru"],"areaServed":"Worldwide","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Full package adventure"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Professional tour guides in English, Spanish and Russian"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Itinerary design"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Booking of activities, restaurants, flights and other services"}}]}
 </script>
-<style>
-@font-face{font-family:"Fraunces";src:url(fonts/fraunces-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F}
-@font-face{font-family:"Fraunces";src:url(fonts/lora-cyr-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0400-045F}
-@font-face{font-family:"Inter";src:url(fonts/inter-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
-@font-face{font-family:"Inter";src:url(fonts/inter-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
-@font-face{font-family:"Inter";src:url(fonts/inter-cyr-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0400-045F}
-@font-face{font-family:"Inter";src:url(fonts/inter-cyr-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0400-045F}
-:root{--bg:#fbf8f4;--card:#fff;--ink:#1d1a17;--muted:#5f5850;--line:#ebe4da;--coral:#e8553d;--coral-d:#c63f29;--dark:#15202b;--r:18px;--head:"Fraunces",Georgia,serif;--body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.55 var(--body);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.1;margin:0}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-.sr-only{position:absolute;left:-9999px}
-.skip:focus{left:12px;top:12px;z-index:99;background:#fff;padding:8px 12px;border-radius:8px}
-:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
-/* nav */
-.nav{position:sticky;top:0;z-index:20;background:rgba(251,248,244,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;gap:16px;height:64px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;letter-spacing:-.01em;margin-right:auto}
-.logo svg{width:32px;height:32px}
-.links{display:flex;gap:22px}
-.links a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.links a:hover{color:var(--ink)}
-.langs{display:flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:#fff}
-.langs button{all:unset;cursor:pointer;font:600 .72rem var(--body);padding:5px 8px;border-radius:999px;color:var(--muted)}
-.langs button[aria-pressed=true]{background:var(--ink);color:#fff}
-.langs button:focus-visible{outline:2px solid var(--coral)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;border:0;font:600 .98rem var(--body);text-decoration:none;cursor:pointer;transition:background .2s ease,transform .2s ease,box-shadow .2s ease,border-color .2s ease,color .2s ease}
-.btn:active{transform:scale(.98)}
-.btn-p{background:var(--coral);color:#fff}.btn-p:hover{background:var(--coral-d)}
-.btn-g{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.55)}.btn-g:hover{background:rgba(255,255,255,.26)}
-.btn-o{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}.btn-o:hover{background:var(--ink);color:#fff}
-.btn-sm{min-height:40px;padding:0 16px;font-size:.9rem}
-/* hero */
-.hero{position:relative;min-height:min(78vh,680px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-.hero picture{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
-.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 72%;transform:scale(1);transform-origin:50% 50%;animation:hero-zoom 26s ease-out forwards}
-@keyframes hero-zoom{from{transform:scale(1)}to{transform:scale(1.06)}}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,25,.12) 0%,rgba(10,15,25,.22) 45%,rgba(10,15,25,.48) 72%,rgba(10,15,25,.78) 100%)}
-.hero .wrap{position:relative;z-index:1;padding-bottom:56px;padding-top:80px}
-.eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.92;margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,7.5vw,5.2rem);letter-spacing:-.02em;max-width:12ch}
-.hero h1 em{font-style:normal;color:#ffb8a8}
-.hero p.lead{font-size:clamp(1.05rem,2.2vw,1.3rem);max-width:34ch;margin:16px 0 26px;opacity:.95}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.chips{display:flex;flex-wrap:wrap;gap:8px 18px;margin:26px 0 0;padding:0;list-style:none;font-size:.9rem;opacity:.92}
-.chips li::before{content:"✓ ";color:#ffb8a8;font-weight:600}
-/* sections */
-section{padding:64px 0}
-.sec-h{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px;margin-bottom:28px}
-.sec-h h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.015em}
-.sec-h p{margin:6px 0 0;color:var(--muted)}
-.grid{display:grid;gap:18px;grid-template-columns:repeat(4,1fr)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .25s ease,transform .25s ease}
-.card:hover{box-shadow:0 18px 40px -16px rgba(40,25,10,.42);transform:translateY(-5px)}
-.card img{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto;flex:none}
-.card-b{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
-.card h3{font-size:1.28rem}
-.card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
-.card .btn{margin-top:10px;align-self:flex-start}
-.steps{display:flex;flex-wrap:wrap;gap:10px 28px;margin:30px 0 0;padding:18px 22px;list-style:none;border-radius:var(--r);background:#f3ede5;counter-reset:s;font-weight:600}
-.steps li{counter-increment:s;display:flex;align-items:center;gap:10px}
-.steps li::before{content:counter(s);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--coral);color:#fff;font-size:.85rem}
-/* AI */
-.ai{background:var(--dark);color:#eef3f7}
-.ai .sec-h p{color:#b8c6d2}
-.tag{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#7fd3c4;margin-bottom:10px}
-.ai .card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)}
-.ai .card:hover{box-shadow:none;border-color:rgba(127,211,196,.5)}
-.ai .card p{color:#b8c6d2}
-.ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(127,211,196,.14);color:#7fd3c4}
-.ico svg{width:22px;height:22px}
-.ai .actions{margin-top:22px}
-.ai-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,400px);gap:28px 40px;align-items:center;margin-bottom:32px}
-.ai-top .sec-h{margin-bottom:0}
-.qd-preview{display:block;margin:0;padding:0;border-radius:16px;overflow:hidden;border:1.5px solid rgba(255,255,255,.12);box-shadow:0 20px 44px -22px rgba(0,0,0,.7);background:#070B12;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;text-decoration:none;color:inherit}
-.qd-preview:hover{transform:translateY(-4px);border-color:rgba(127,211,196,.55);box-shadow:0 24px 48px -20px rgba(0,0,0,.8)}
-.qd-preview img{width:100%;height:auto;display:block;aspect-ratio:800/557;object-fit:cover}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
-.reveal.in{opacity:1;transform:none}
-.svc .card.reveal:nth-child(1){transition-delay:.05s}
-.svc .card.reveal:nth-child(2){transition-delay:.12s}
-.svc .card.reveal:nth-child(3){transition-delay:.19s}
-.svc .card.reveal:nth-child(4){transition-delay:.26s}
-.ai .grid .card.reveal:nth-child(1){transition-delay:.05s}
-.ai .grid .card.reveal:nth-child(2){transition-delay:.12s}
-.ai .grid .card.reveal:nth-child(3){transition-delay:.19s}
-.ai .grid .card.reveal:nth-child(4){transition-delay:.26s}
-dialog.qd-dlg{width:min(1100px,calc(100% - 20px));height:min(840px,calc(100vh - 20px));max-height:calc(100% - 20px);padding:0;background:#0b1218;overflow:hidden}
-.qd-inner{height:100%;display:flex;flex-direction:column;min-height:0}
-.qd-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px 10px 18px;background:#15202b;color:#eef3f7;border-bottom:1px solid rgba(255,255,255,.08);flex:none}
-.qd-bar strong{font-family:var(--head);font-weight:600;font-size:1.08rem}
-.qd-bar .x{background:rgba(255,255,255,.1);color:#fff}
-.qd-bar .x:hover{background:rgba(255,255,255,.2)}
-.qd-dlg iframe{flex:1;width:100%;border:0;background:#070B12;min-height:0}
-.ai .btn-o{color:#fff;border-color:rgba(255,255,255,.6)}.ai .btn-o:hover{background:#fff;color:var(--dark)}
-/* contact */
-.contact{text-align:center}
-.contact h2{font-size:clamp(1.8rem,4vw,2.6rem)}
-.contact p{color:var(--muted);margin:10px 0 24px}
-.contact .actions{justify-content:center}
-footer{border-top:1px solid var(--line);padding:24px 0 90px;color:var(--muted);font-size:.9rem}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
-footer nav{display:flex;gap:18px}footer a{text-decoration:none}footer a:hover{color:var(--ink)}
-/* whatsapp */
-.wa{position:fixed;right:18px;bottom:18px;z-index:30;display:flex;align-items:center;gap:8px;background:#25d366;color:#08311a;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 18px 12px 14px;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
-.wa svg{width:24px;height:24px}
-.wa:hover{background:#1fbe5b}
-body:has(dialog[open]) .wa{opacity:0;visibility:hidden;pointer-events:none}
-/* dialog */
-dialog{border:0;border-radius:22px;padding:0;width:min(560px,calc(100% - 24px));max-height:calc(100% - 24px);color:var(--ink);box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
-dialog::backdrop{background:rgba(15,20,28,.55);backdrop-filter:blur(3px)}
-.dlg{padding:26px 24px 24px}
-.dlg-h{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:16px}
-.dlg-h h2{font-size:1.6rem}
-.x{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:1.4rem;background:#f3ede5;flex:none}
-.x:focus-visible{outline:3px solid var(--coral)}
-form{display:grid;gap:12px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-label{display:grid;gap:5px;font-size:.85rem;font-weight:600}
-input,select,textarea{font:inherit;font-weight:400;font-size:1rem;width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
-input:focus,select:focus,textarea:focus{border-color:var(--coral);outline:none;box-shadow:0 0 0 3px rgba(232,85,61,.18)}
-textarea{min-height:96px;resize:vertical}
-.hp{display:none}
-.status{min-height:1.4em;margin:0;font-size:.92rem}
-.status.ok{color:#18794e;font-weight:600}.status.err{color:#b42318}
-form .btn{width:100%}
-/* responsive */
-@media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:760px){.links{display:none}.nav-cta{display:none}section{padding:48px 0}.hero{min-height:72vh}.hero .wrap{padding-bottom:40px}.hero picture img{object-position:center 50%}.ai-top{grid-template-columns:1fr;gap:20px;margin-bottom:24px}.qd-preview img{max-height:200px}}
-@media (max-width:560px){.grid.svc{grid-template-columns:1fr 1fr;gap:12px}.svc .card img{aspect-ratio:1/1}.svc .card-b{padding:12px 12px 14px}.svc .card h3{font-size:1.05rem}.svc .card p{font-size:.85rem}.svc .card .btn{width:100%;padding:0 10px;font-size:.85rem}.ai .grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.wa span{display:none}.wa{padding:14px}.actions .btn{flex:1 1 auto}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;animation:none!important}.hero picture img{transform:none}.reveal{opacity:1;transform:none}}
-</style>
 </head>
-<body>
+<body data-page="travel">
 <a class="sr-only skip" href="#main" data-t="skip">Skip to content</a>
 <header class="nav">
  <div class="wrap nav-in">
-  <a class="logo" href="#top" aria-label="Now-Now Travel home">
+  <a class="logo" href="/" aria-label="Now-Now Travel home">
    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#e8553d"/><path d="M14 46V18h6l14 18V18h6v28h-6L20 28v18z" fill="#fff"/><circle cx="49" cy="42" r="4" fill="#fff"/></svg>
    Now-Now Travel</a>
-  <nav class="links" aria-label="Primary">
-   <a href="#services" data-t="nav_services">Services</a>
-   <a href="#ai" data-t="nav_ai">For business</a>
-  </nav>
   <div class="langs" role="group" aria-label="Language">
    <button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="ru" aria-pressed="false">RU</button><button type="button" data-lang="es" aria-pressed="false">ES</button>
   </div>
   <a class="btn btn-p btn-sm nav-cta" href="#contact" data-open="full-package" data-t="nav_cta">Get your quote</a>
  </div>
+ <div class="tabbar">
+  <nav class="tabs" aria-label="Now-Now Travel and Now-Now Travel AI">
+   <a class="tab" href="/" aria-current="page" data-t="tab_travel">Now-Now Travel</a>
+   <a class="tab" href="/ai/" data-t="tab_ai">Now-Now Travel AI</a>
+  </nav>
+ </div>
 </header>
 <main id="main">
-<section class="hero" id="top" aria-labelledby="h1">
+<section class="hero hero-travel" id="top" aria-labelledby="h1">
  <picture>
-  <source media="(max-width:800px)" type="image/webp" srcset="img/hero-m.webp">
-  <source media="(max-width:800px)" type="image/jpeg" srcset="img/hero-m.jpg">
-  <source type="image/webp" srcset="img/hero.webp">
-  <img src="img/hero.jpg" alt="Elephants walking through tall grass at sunset" width="1920" height="1152" fetchpriority="high">
+  <source media="(max-width:800px)" type="image/webp" srcset="/img/hero-m.webp">
+  <source media="(max-width:800px)" type="image/jpeg" srcset="/img/hero-m.jpg">
+  <source type="image/webp" srcset="/img/hero-1280.webp 1280w, /img/hero.webp 2560w" sizes="100vw">
+  <source type="image/jpeg" srcset="/img/hero-1280.jpg 1280w, /img/hero.jpg 2560w" sizes="100vw">
+  <img src="/img/hero.jpg" alt="A mountain lake at sunrise, with peaks lit by golden light" width="2560" height="1440" fetchpriority="high">
  </picture>
  <div class="wrap">
   <p class="eyebrow" data-t="eyebrow">Tailor-made travel · Private guides</p>
@@ -212,40 +80,14 @@ form .btn{width:100%}
  <div class="wrap">
   <div class="sec-h reveal"><div><h2 id="svc-h" data-t="svc_h">How can we help?</h2><p data-t="svc_p">Pick a service. We'll come back with a plan and a quote.</p></div></div>
   <div class="grid svc">
-   <article class="card reveal"><img src="img/full-package.webp" alt="Guests on an open safari vehicle" width="720" height="529" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s1t">Full package adventure</h3><p data-t="s1d">Everything handled, from first idea to last sunset.</p><a class="btn btn-p btn-sm" href="#contact" data-open="full-package" data-t="quote">Get your quote</a></div></article>
-   <article class="card reveal"><img src="img/guides.webp" alt="Hikers resting on a mountain summit above the sea" width="720" height="540" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s2t">Professional tour guides</h3><p data-t="s2d">Private guides in English, Spanish and Russian.</p><a class="btn btn-p btn-sm" href="#contact" data-open="guides" data-t="enquire">Enquire</a></div></article>
-   <article class="card reveal"><img src="img/itinerary.webp" alt="Vineyards in front of mountains" width="720" height="480" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s3t">Your itinerary design</h3><p data-t="s3d">A day-by-day plan built around you.</p><a class="btn btn-p btn-sm" href="#contact" data-open="itinerary" data-t="quote">Get your quote</a></div></article>
-   <article class="card reveal"><img src="img/bookings.webp" alt="A sailing boat passing coastal cliffs" width="720" height="478" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s4t">Bookings</h3><p data-t="s4d">Activities, restaurants, flights and more, booked for you.</p><a class="btn btn-p btn-sm" href="#contact" data-open="bookings" data-t="enquire">Enquire</a></div></article>
+   <article class="card reveal"><img src="/img/full-package.webp" alt="Guests on an open safari vehicle" width="720" height="529" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s1t">Full package adventure</h3><p data-t="s1d">Everything handled, from first idea to last sunset.</p><a class="btn btn-p btn-sm" href="#contact" data-open="full-package" data-t="quote">Get your quote</a></div></article>
+   <article class="card reveal"><img src="/img/guides.webp" alt="Hikers resting on a mountain summit above the sea" width="720" height="540" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s2t">Professional tour guides</h3><p data-t="s2d">Private guides in English, Spanish and Russian.</p><a class="btn btn-p btn-sm" href="#contact" data-open="guides" data-t="enquire">Enquire</a></div></article>
+   <article class="card reveal"><img src="/img/itinerary.webp" alt="Vineyards in front of mountains" width="720" height="480" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s3t">Your itinerary design</h3><p data-t="s3d">A day-by-day plan built around you.</p><a class="btn btn-p btn-sm" href="#contact" data-open="itinerary" data-t="quote">Get your quote</a></div></article>
+   <article class="card reveal"><img src="/img/bookings.webp" alt="A sailing boat passing coastal cliffs" width="720" height="478" loading="lazy" decoding="async"><div class="card-b"><h3 data-t="s4t">Bookings</h3><p data-t="s4d">Activities, restaurants, flights and more, booked for you.</p><a class="btn btn-p btn-sm" href="#contact" data-open="bookings" data-t="enquire">Enquire</a></div></article>
   </div>
   <ol class="steps reveal" aria-label="How it works">
    <li data-t="st1">Tell us what you want</li><li data-t="st2">Get your plan and quote</li><li data-t="st3">Go and enjoy</li>
   </ol>
- </div>
-</section>
-
-<section class="ai" id="ai" aria-labelledby="ai-h">
- <div class="wrap">
-  <div class="ai-top reveal">
-   <div>
-    <div class="sec-h"><div><span class="tag" data-t="ai_tag">Now-Now Travel AI</span><h2 id="ai-h" data-t="ai_h">Quote Desk</h2><p data-t="ai_p">AI that works the night shift for DMCs, travel agents, tour operators and lodges.</p></div></div>
-    <div class="actions">
-     <a class="btn btn-p" href="https://safrilo-xfactor.vercel.app/start.html?lang=en" data-qd target="_blank" rel="noopener" data-t="ai_try">Try Quote Desk</a>
-     <a class="btn btn-o" href="#contact" data-open="ai" data-t="ai_cta">Book a demo</a>
-    </div>
-   </div>
-   <a class="qd-preview" href="https://safrilo-xfactor.vercel.app/start.html?lang=en" data-qd target="_blank" rel="noopener" data-t-al="ai_try">
-    <picture>
-     <source type="image/webp" srcset="img/quotedesk-preview.webp">
-     <img src="img/quotedesk-preview.jpg" alt="" width="800" height="557" loading="lazy" decoding="async">
-    </picture>
-   </a>
-  </div>
-  <div class="grid">
-   <div class="card reveal"><div class="card-b"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-t="a1t">No enquiry waits</h3><p data-t="a1d">Agents read late-night requests and draft the proposal in your client's language by morning.</p></div></div>
-   <div class="card reveal"><div class="card-b"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M9.5 12.5l2 2 3.5-4"/></svg></div><h3 data-t="a2t">You stay in charge</h3><p data-t="a2d">Nothing is sent, booked or paid without your yes: one tap on your phone.</p></div></div>
-   <div class="card reveal"><div class="card-b"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div><h3 data-t="a3t">Back office handled</h3><p data-t="a3d">Supplier invoices filed by trip and proofs of payment sent back. No chasing.</p></div></div>
-   <div class="card reveal"><div class="card-b"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3 data-t="a4t">Your knowledge, kept</h3><p data-t="a4d">Past itineraries, rates and contracts in one memory, even when people move on.</p></div></div>
-  </div>
  </div>
 </section>
 
@@ -264,7 +106,7 @@ form .btn{width:100%}
 <footer>
  <div class="wrap">
   <span>© 2026 Now-Now Travel</span>
-  <nav aria-label="Footer"><a href="#services" data-t="nav_services">Services</a><a href="#ai" data-t="nav_ai">For business</a><a href="#contact" data-open="" data-t="enquire">Enquire</a></nav>
+  <nav aria-label="Footer"><a href="#services" data-t="svc_h">How can we help?</a><a href="#contact" data-open="" data-t="enquire">Enquire</a></nav>
  </div>
 </footer>
 
@@ -272,13 +114,6 @@ form .btn{width:100%}
  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3z"/></svg>
  <span>WhatsApp</span>
 </a>
-
-<dialog id="qd" class="qd-dlg" aria-labelledby="qd-h">
- <div class="qd-inner">
-  <div class="qd-bar"><strong id="qd-h" data-t="ai_h">Quote Desk</strong><button class="x" type="button" data-qd-close aria-label="Close" data-t-al="close">×</button></div>
-  <iframe id="qdFrame" title="Quote Desk" allow="clipboard-write"></iframe>
- </div>
-</dialog>
 
 <dialog id="enq" aria-labelledby="enq-h">
  <div class="dlg">
@@ -290,7 +125,6 @@ form .btn{width:100%}
      <option value="guides" data-t="s2t">Professional tour guides</option>
      <option value="itinerary" data-t="s3t">Your itinerary design</option>
      <option value="bookings" data-t="s4t">Bookings</option>
-     <option value="ai" data-t="o_ai">AI for my travel business</option>
     </select></label>
    <div class="row">
     <label><span data-t="f_name">Name</span><input name="name" autocomplete="name" required></label>
@@ -306,56 +140,6 @@ form .btn{width:100%}
   </form>
  </div>
 </dialog>
-
-<script>
-(function(){
-var T={
-en:{skip:"Skip to content",nav_services:"Services",nav_ai:"For business",nav_cta:"Get your quote",eyebrow:"Tailor-made travel · Private guides",h1:"Adventure? <em>Now-now.</em>",lead:"We plan it, book it and guide it. You just go.",cta_plan:"Plan my trip",cta_services:"See services",chip1:"Guides in English · Español · Русский",chip2:"Personal reply, usually the same day",svc_h:"How can we help?",svc_p:"Pick a service. We'll come back with a plan and a quote.",s1t:"Full package adventure",s1d:"Everything handled, from first idea to last sunset.",s2t:"Professional tour guides",s2d:"Private guides in English, Spanish and Russian.",s3t:"Your itinerary design",s3d:"A day-by-day plan built around you.",s4t:"Bookings",s4d:"Activities, restaurants, flights and more, booked for you.",quote:"Get your quote",enquire:"Enquire",st1:"Tell us what you want",st2:"Get your plan and quote",st3:"Go and enjoy",ai_tag:"Now-Now Travel AI",ai_h:"Quote Desk",ai_p:"AI that works the night shift for DMCs, travel agents, tour operators and lodges.",a1t:"No enquiry waits",a1d:"Agents read late-night requests and draft the proposal in your client's language by morning.",a2t:"You stay in charge",a2d:"Nothing is sent, booked or paid without your yes: one tap on your phone.",a3t:"Back office handled",a3d:"Supplier invoices filed by trip and proofs of payment sent back. No chasing.",a4t:"Your knowledge, kept",a4d:"Past itineraries, rates and contracts in one memory, even when people move on.",ai_try:"Try Quote Desk",ai_cta:"Book a demo",ai_cta2:"Ask a question",c_h:"Ready when you are",c_p:"Send an enquiry or message us on WhatsApp.",c_form:"Send an enquiry",c_wa:"WhatsApp us",wa_al:"Chat with us on WhatsApp",close:"Close",f_h:"Tell us your plans",f_service:"I'm interested in",o_ai:"AI for my travel business",f_name:"Name",f_email:"Email",f_phone:"WhatsApp or phone (optional)",f_msg:"Dates, group size, what you'd love",f_lang:"Reply in",f_send:"Send enquiry",sending:"Sending…",ok:"Thank you! We'll reply soon.",err:"Sorry, that didn't go through. Please message us on WhatsApp.",invalid:"Please fill in your name, a valid email and a short message.",wa_txt:"Hi Now-Now Travel! I'd like to plan a trip."},
-ru:{skip:"Перейти к содержанию",nav_services:"Услуги",nav_ai:"Для бизнеса",nav_cta:"Узнать цену",eyebrow:"Индивидуальные путешествия · Частные гиды",h1:"Приключения? <em>Now-now.</em>",lead:"Спланируем, забронируем и проведём. Вам остаётся только ехать.",cta_plan:"Спланировать поездку",cta_services:"Наши услуги",chip1:"Гиды: English · Español · Русский",chip2:"Личный ответ, обычно в тот же день",svc_h:"Чем мы можем помочь?",svc_p:"Выберите услугу, и мы пришлём план и расчёт.",s1t:"Путешествие под ключ",s1d:"Берём на себя всё, от идеи до последнего заката.",s2t:"Профессиональные гиды",s2d:"Частные гиды на русском, испанском и английском.",s3t:"Дизайн маршрута",s3d:"Программа по дням, созданная под вас.",s4t:"Бронирования",s4d:"Активности, рестораны, перелёты и другое забронируем за вас.",quote:"Узнать цену",enquire:"Оставить заявку",st1:"Расскажите, чего хотите",st2:"Получите план и расчёт",st3:"Отправляйтесь",ai_tag:"Now-Now Travel AI",ai_h:"Quote Desk",ai_p:"ИИ, который работает в ночную смену, для DMC, турагентств, туроператоров и лоджей.",a1t:"Ни один запрос не ждёт",a1d:"Агенты разбирают ночные запросы и к утру готовят предложение на языке клиента.",a2t:"Решаете вы",a2d:"Ничего не отправляется, не бронируется и не оплачивается без вашего «да» в телефоне.",a3t:"Бэк-офис под контролем",a3d:"Счета поставщиков разложены по поездкам, подтверждения оплаты отправлены. Без напоминаний.",a4t:"Ваши знания сохранены",a4d:"Прошлые маршруты, тарифы и контракты в одной памяти, даже если сотрудник ушёл.",ai_try:"Попробовать Quote Desk",ai_cta:"Записаться на демо",ai_cta2:"Задать вопрос",c_h:"Начнём?",c_p:"Оставьте заявку или напишите нам в WhatsApp.",c_form:"Оставить заявку",c_wa:"Написать в WhatsApp",wa_al:"Написать нам в WhatsApp",close:"Закрыть",f_h:"Расскажите о своих планах",f_service:"Что вас интересует",o_ai:"ИИ для моего турбизнеса",f_name:"Имя",f_email:"Email",f_phone:"WhatsApp или телефон (необязательно)",f_msg:"Даты, количество гостей, пожелания",f_lang:"Язык ответа",f_send:"Отправить заявку",sending:"Отправляем…",ok:"Спасибо! Мы скоро ответим.",err:"Не удалось отправить. Напишите нам, пожалуйста, в WhatsApp.",invalid:"Укажите имя, корректный email и пару слов о поездке.",wa_txt:"Здравствуйте! Хочу спланировать поездку с Now-Now Travel."},
-es:{skip:"Ir al contenido",nav_services:"Servicios",nav_ai:"Para empresas",nav_cta:"Pide tu presupuesto",eyebrow:"Viajes a medida · Guías privados",h1:"¿Aventura? <em>Now-now.</em>",lead:"Lo planificamos, lo reservamos y te guiamos. Tú solo viaja.",cta_plan:"Planear mi viaje",cta_services:"Ver servicios",chip1:"Guías en English · Español · Русский",chip2:"Respuesta personal, normalmente el mismo día",svc_h:"¿Cómo podemos ayudarte?",svc_p:"Elige un servicio y te enviamos un plan y un presupuesto.",s1t:"Aventura todo incluido",s1d:"Nos ocupamos de todo, de la primera idea al último atardecer.",s2t:"Guías profesionales",s2d:"Guías privados en español, inglés y ruso.",s3t:"Diseño de tu itinerario",s3d:"Un plan día a día hecho a tu medida.",s4t:"Reservas",s4d:"Actividades, restaurantes, vuelos y más, reservados por ti.",quote:"Pide tu presupuesto",enquire:"Consultar",st1:"Cuéntanos qué quieres",st2:"Recibe tu plan y presupuesto",st3:"Viaja y disfruta",ai_tag:"Now-Now Travel AI",ai_h:"Quote Desk",ai_p:"IA que trabaja el turno de noche para DMC, agencias de viajes, turoperadores y lodges.",a1t:"Ninguna consulta espera",a1d:"Los agentes leen las solicitudes nocturnas y por la mañana tienen la propuesta en el idioma del cliente.",a2t:"Tú decides",a2d:"Nada se envía, reserva ni paga sin tu sí: un toque en el móvil.",a3t:"Back office resuelto",a3d:"Facturas de proveedores archivadas por viaje y comprobantes de pago enviados. Sin perseguir a nadie.",a4t:"Tu conocimiento, guardado",a4d:"Itinerarios, tarifas y contratos en una sola memoria, aunque cambie el equipo.",ai_try:"Probar Quote Desk",ai_cta:"Reservar una demo",ai_cta2:"Hacer una pregunta",c_h:"¿Empezamos?",c_p:"Envía una consulta o escríbenos por WhatsApp.",c_form:"Enviar consulta",c_wa:"Escríbenos por WhatsApp",wa_al:"Escríbenos por WhatsApp",close:"Cerrar",f_h:"Cuéntanos tus planes",f_service:"Me interesa",o_ai:"IA para mi empresa de viajes",f_name:"Nombre",f_email:"Email",f_phone:"WhatsApp o teléfono (opcional)",f_msg:"Fechas, número de personas, lo que te encantaría",f_lang:"Responder en",f_send:"Enviar consulta",sending:"Enviando…",ok:"¡Gracias! Te responderemos pronto.",err:"No se pudo enviar. Escríbenos por WhatsApp, por favor.",invalid:"Indica tu nombre, un email válido y un breve mensaje.",wa_txt:"¡Hola Now-Now Travel! Quiero planear un viaje."}};
-var WA="https://wa.me/27710347336?text=",lang="en";
-function setLang(l){if(!T[l])l="en";lang=l;var d=T[l];document.documentElement.lang=l;
- document.querySelectorAll("[data-t]").forEach(function(el){var k=el.getAttribute("data-t");if(d[k]==null)return;if(el.hasAttribute("data-html"))el.innerHTML=d[k];else el.textContent=d[k];});
- document.querySelectorAll("[data-t-al]").forEach(function(el){var k=el.getAttribute("data-t-al");if(d[k])el.setAttribute("aria-label",d[k]);});
- document.querySelectorAll(".wa-link").forEach(function(a){a.href=WA+encodeURIComponent(d.wa_txt);});
- document.querySelectorAll(".langs button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.lang===l?"true":"false");});
- var rl=document.querySelector("[name=reply_language]");if(rl)rl.selectedIndex={en:0,es:1,ru:2}[l];
- syncQdLinks();if(qdDlg&&qdDlg.open&&qdFrame){var s=qdUrl();if(qdFrame.getAttribute("src")!==s)qdFrame.src=s;}try{localStorage.setItem("nn-lang",l)}catch(e){}}
-document.querySelectorAll(".langs button").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.lang)})});
-var saved=null;try{saved=localStorage.getItem("nn-lang")}catch(e){}
-var nav=(navigator.language||"en").slice(0,2);setLang(saved||(T[nav]?nav:"en"));
-var QD_BASE="https://safrilo-xfactor.vercel.app/start.html?lang=";
-function qdLang(){return lang==="ru"?"ru":"en"}
-function qdUrl(){return QD_BASE+qdLang()}
-function syncQdLinks(){document.querySelectorAll("a[data-qd]").forEach(function(a){a.href=qdUrl()})}
-var qdDlg=document.getElementById("qd"),qdFrame=document.getElementById("qdFrame");
-function openQd(e){if(e)e.preventDefault();if(!qdDlg||!qdDlg.showModal){window.open(qdUrl(),"_blank","noopener");return}var s=qdUrl();if(qdFrame.getAttribute("src")!==s)qdFrame.src=s;qdDlg.showModal();}
-document.querySelectorAll("[data-qd]").forEach(function(el){el.addEventListener("click",openQd)});
-if(qdDlg){qdDlg.addEventListener("click",function(e){var t=e.target&&e.target.nodeType===3?e.target.parentElement:e.target;if(t===qdDlg||(t&&t.closest&&t.closest("[data-qd-close]")))qdDlg.close()});qdDlg.querySelectorAll("[data-qd-close]").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();qdDlg.close()})});}
-var reduce=false;try{reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches}catch(e){}
-if(reduce){document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in")})}
-else if("IntersectionObserver" in window){var io=new IntersectionObserver(function(ents){ents.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target)}})},{threshold:0.14,rootMargin:"0px 0px -8% 0px"});document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)})}
-else{document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in")})}
-var dlg=document.getElementById("enq"),form=document.getElementById("enqForm"),st=document.getElementById("fStatus"),sel=document.getElementById("fService");
-if(dlg&&dlg.showModal){
-document.addEventListener("click",function(e){var a=e.target.closest("[data-open]");if(!a)return;e.preventDefault();var s=a.getAttribute("data-open");if(s)sel.value=s;st.textContent="";st.className="status";dlg.showModal();var f=form.querySelector("[name=name]");setTimeout(function(){(s?f:sel).focus()},30);});
-dlg.addEventListener("click",function(e){if(e.target===dlg||e.target.closest("[data-close]"))dlg.close();});
-}
-if(!form)return;
-var to="a4826d9ddcd0f38b33dd17860adb6c38";
-form.addEventListener("submit",function(e){e.preventDefault();var d=T[lang],fd=new FormData(form);
- if(fd.get("_honey"))return;
- if(!form.checkValidity()){st.className="status err";st.textContent=d.invalid;var bad=form.querySelector(":invalid");if(bad)bad.focus();return;}
- var data={};fd.forEach(function(v,k){data[k]=v});data.service=sel.options[sel.selectedIndex].text+" ("+sel.value+")";data.site_language=lang;
- data._subject="New enquiry: "+sel.options[sel.selectedIndex].text+" ("+data.name+")";data._template="table";data._replyto=data.email;
- var btn=form.querySelector("[type=submit]");btn.disabled=true;st.className="status";st.textContent=d.sending;
- fetch("https://formsubmit.co/ajax/"+to,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
- .then(function(r){return r.json().catch(function(){return{}})}).then(function(j){
-   if(j&&(j.success===true||j.success==="true")){st.className="status ok";st.textContent=d.ok;form.reset();setLang(lang);}
-   else{throw new Error(j&&j.message||"fail")}})
- .catch(function(){st.className="status err";st.innerHTML="";st.appendChild(document.createTextNode(d.err+" "));var a=document.createElement("a");a.href=WA+encodeURIComponent(d.wa_txt);a.target="_blank";a.rel="noopener";a.textContent="WhatsApp →";st.appendChild(a);})
- .finally(function(){btn.disabled=false});});
-})();
-</script>
+<script src="/js/site.js" defer></script>
 </body>
 </html>

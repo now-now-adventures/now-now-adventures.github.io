@@ -1,5 +1,8 @@
-Hero and social image:
-img/hero.webp, img/hero.jpg, img/hero-m.webp, img/hero-m.jpg, img/og.jpg — “African Elephants at Sunset in Maasai Mara” by Lloyd Alozie, Pexels, https://www.pexels.com/photo/african-elephants-at-sunset-in-maasai-mara-37419265/ (Pexels License, free for commercial use: https://www.pexels.com/license/)
+Travel hero and social image:
+img/hero.webp, img/hero-1280.webp, img/hero.jpg, img/hero-1280.jpg, img/hero-m.webp, img/hero-m.jpg, img/og.jpg — “Sunrise at Moraine Lake, Banff National Park” by Joshua Woroniecki, Pexels, https://www.pexels.com/photo/sunrise-at-moraine-lake-banff-national-park-31891237/ (Pexels License, free for commercial use: https://www.pexels.com/license/)
+
+AI hero and social image:
+img/ai-hero.webp, img/ai-hero-1280.webp, img/ai-hero.jpg, img/ai-hero-1280.jpg, img/ai-hero-m.webp, img/ai-hero-m.jpg, img/og-ai.jpg — “Luxury Outdoor Patio at Modern Safari Lodge” by Magda Ehlers, Pexels, https://www.pexels.com/photo/luxury-outdoor-patio-at-modern-safari-lodge-37790193/ (Pexels License, free for commercial use: https://www.pexels.com/license/)
 
 Quote Desk preview (cropped, prices and contact details omitted):
 img/quotedesk-preview.webp, img/quotedesk-preview.jpg — screenshot of https://safrilo-xfactor.vercel.app/start.html
