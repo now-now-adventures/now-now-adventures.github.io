@@ -14,3 +14,5 @@ img/itinerary.webp — File:Groot Constantia Estate.jpg (CC BY-SA 3.0) https://c
 img/bookings.webp — File:Boat going out to Knysna Heads, Western Cape (6252670935).jpg (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Boat_going_out_to_Knysna_Heads,_Western_Cape_(6252670935).jpg
 
 Fonts: Fraunces, Lora, Inter — SIL Open Font License.
+
+Logo ("Signature" nn mark with plane), favicon, app icons and plane animations: original artwork created for Now-Now Travel, November 2026. No third-party assets.
