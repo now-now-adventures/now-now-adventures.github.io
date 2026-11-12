@@ -38,7 +38,7 @@ h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.1;margin:0}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;border:0;font:600 .98rem var(--body);text-decoration:none;cursor:pointer;transition:background .2s ease,transform .2s ease,box-shadow .2s ease,border-color .2s ease,color .2s ease}
 .btn:active{transform:scale(.98)}
 .btn-p{background:var(--coral);color:#fff}.btn-p:hover{background:var(--coral-d)}
-.btn-g{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.55)}.btn-g:hover{background:rgba(255,255,255,.26)}
+.btn-g{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.7);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.btn-g:hover{background:rgba(255,255,255,.26)}
 .btn-o{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}.btn-o:hover{background:var(--ink);color:#fff}
 .btn-sm{min-height:40px;padding:0 16px;font-size:.9rem}
 /* hero */
@@ -48,12 +48,13 @@ h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.1;margin:0}
 .hero-travel picture img{object-position:center 48%}
 .hero-ai picture img{object-position:center 45%}
 @keyframes hero-zoom{from{transform:scale(1)}to{transform:scale(1.06)}}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,25,.08) 0%,rgba(10,15,25,.16) 42%,rgba(10,15,25,.40) 74%,rgba(10,15,25,.60) 100%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,12,18,.08) 0%,rgba(16,12,18,.05) 36%,rgba(16,12,18,.36) 66%,rgba(14,11,16,.70) 100%),linear-gradient(90deg,rgba(14,11,16,.28) 0%,rgba(14,11,16,.10) 40%,transparent 68%)}
 .hero .wrap{position:relative;z-index:2;padding-bottom:56px;padding-top:80px}
 .eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.92;margin:0 0 14px}
 .hero h1{font-size:clamp(2.6rem,7.5vw,5.2rem);letter-spacing:-.02em;max-width:12ch}
 .hero-ai h1{max-width:14ch;font-size:clamp(2.4rem,6.5vw,4.6rem)}
-.hero h1 em{font-style:normal;color:#ffb8a8}
+.hero h1,.hero p.lead,.hero .eyebrow,.hero .chips{text-shadow:0 1px 2px rgba(0,0,0,.45),0 8px 28px rgba(0,0,0,.35)}
+.hero h1 em{font-style:normal;color:#ffb8a8;text-shadow:0 1px 2px rgba(0,0,0,.35),0 6px 22px rgba(80,30,20,.3)}
 .hero p.lead{font-size:clamp(1.05rem,2.2vw,1.3rem);max-width:34ch;margin:16px 0 26px;opacity:.95}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
 .chips{display:flex;flex-wrap:wrap;gap:8px 18px;margin:26px 0 0;padding:0;list-style:none;font-size:.9rem;opacity:.92}
